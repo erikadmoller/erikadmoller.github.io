@@ -13,22 +13,38 @@ module.exports = function(grunt){
 		 	dev: {
 		 		options: {
 		 			style: 'expanded',
-		 			souremap: 'none',
+		 			// souremap: 'none',
 		 		},
 		 		files: {
-		 			'compiled/style.css': 'sass/style.scss'
+		 			'compiled/style.css': 'scss/style.scss'
 		 		}
 		 	},
 		 	 dist: {
 		 		options: {
 		 			style: 'compressed',
-		 			souremap: 'none',
+		 			// souremap: 'none',
 		 		},
 		 		files: {
-		 			'compiled/style-min.css': 'sass/style.scss'
+		 			'compiled/style-min.css': 'scss/style.scss'
 		 		}
 		 	}
 		 },
+
+		 /**
+		  * Autoprefixer
+		  */
+		  autoprefixer: {
+		  	options: {
+		  		browsers: ['last 2 versions']
+		  	},
+		  	// prefix all files
+		  	multiple_files: {
+		  		expand: true,
+		  		flatten: true,
+		  		src: 'compiled/*.css',
+		  		dest: ''
+		  	}
+		  },
 
 		/**
 		 * Watch task
@@ -36,12 +52,23 @@ module.exports = function(grunt){
 		 watch: {
 		 	css: {
 		 		files: '**/*.scss',
-		 		tasks: ['sass']
+		 		tasks: ['sass', 'autoprefixer', 'serve']
+		 	}
+		 },
+
+		/**
+		 * Serve task
+		 */
+		 serve: {
+		 	options: {
+		 		port: 9000
 		 	}
 		 }
 	});
 
-	grunt.loadNmpTasks('grunt-contrib-sass');
-	grunt.loadNmpTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-serve');
+	grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.registerTask('default', ['watch']);
 };

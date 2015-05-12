@@ -98,6 +98,15 @@ ul {
       font-weight: 400;
       font-size: 17px; }
 
+a {
+  color: inherit;
+  text-decoration: none; }
+
+a:hover {
+  color: black;
+  text-decoration: none;
+  cursor: pointer; }
+
 /*========portfolio==========*/
 .snippet {
   width: 12em;
@@ -110,6 +119,10 @@ ul {
 .project-title {
   text-align: center;
   margin: 5em auto; }
+  .project-title h4 {
+    font-family: "Abel", sans-serif;
+    font-size: 1.5em;
+    color: black; }
 
 /*=========== medium breakpoint ==============*/
 @media screen and (min-width: 650px) {
