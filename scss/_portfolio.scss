@@ -11,13 +11,73 @@ $copy: 'Abel', sans-serif;
 	vertical-align: top;
 }
 
+.speak {
+	background-image: url(../assets/speak_thumbnail.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 220%;
+
+
+	&:hover {
+		background-image: linear-gradient(rgba(225, 225, 255, 0.7), rgba(225, 225, 225, 0.7)), url(../assets/speak_thumbnail.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		&:hover .project-title {
+			display: block;
+		}
+	}
+}
+
+.shero {
+	background-image: url(../assets/shero_thumbnail.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 220%;
+
+
+	&:hover {
+		background-image: linear-gradient(rgba(225, 225, 255, 0.7), rgba(225, 225, 225, 0.7)), url(../assets/shero_thumbnail.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		&:hover .project-title {
+			display: block;
+		}
+	}
+}
+
+.photo-gallery {
+	background-image: url(../assets/photo-gallery_thumbnail.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 220%;
+
+
+	&:hover {
+		background-image: linear-gradient(rgba(225, 225, 255, 0.7), rgba(225, 225, 225, 0.7)), url(../assets/photo-gallery_thumbnail.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		&:hover .project-title {
+			display: block;
+		}
+	}
+}
+
 .project-title {
 	text-align: center;
-	margin: 5em auto;
+	margin: 0 auto;
+	position: relative;
+	display: none;
 
 	h4 {
+		font-size: 2.5em;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		display: block;
 		font-family: $copy;
-		font-size: 1.5em;
 		color: black;
+		z-index: 1;	
 	}
 } 

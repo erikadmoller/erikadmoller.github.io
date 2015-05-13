@@ -25,12 +25,12 @@ header {
       margin-top: 0.8em; }
     header nav li {
       display: inline-block;
-      margin: 0 0.8em;
-      font-family: "Italiana", serif;
+      margin: 0 0.6em;
+      font-family: "Abel", sans-serif;
       color: #616161;
       font-style: normal;
       font-weight: 400;
-      font-size: 1em;
+      font-size: 1.3em;
       text-transform: uppercase; }
   header .x-line {
     background-color: #DEDDDC;
@@ -55,10 +55,10 @@ h1 {
   font-size: 40px; }
 
 h2 {
-  font-size: 1.8em; }
+  font-size: 2em; }
 
 h3 {
-  font-size: 1em; }
+  font-size: 1.5em; }
 
 h4 {
   font-size: 1.5em; }
@@ -116,13 +116,56 @@ a:hover {
   display: inline-block;
   vertical-align: top; }
 
+.speak {
+  background-image: url(../assets/speak_thumbnail.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 220%; }
+  .speak:hover {
+    background-image: linear-gradient(rgba(225, 225, 255, 0.7), rgba(225, 225, 225, 0.7)), url(../assets/speak_thumbnail.png);
+    background-repeat: no-repeat;
+    background-position: center; }
+    .speak:hover:hover .project-title {
+      display: block; }
+
+.shero {
+  background-image: url(../assets/shero_thumbnail.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 220%; }
+  .shero:hover {
+    background-image: linear-gradient(rgba(225, 225, 255, 0.7), rgba(225, 225, 225, 0.7)), url(../assets/shero_thumbnail.png);
+    background-repeat: no-repeat;
+    background-position: center; }
+    .shero:hover:hover .project-title {
+      display: block; }
+
+.photo-gallery {
+  background-image: url(../assets/photo-gallery_thumbnail.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 220%; }
+  .photo-gallery:hover {
+    background-image: linear-gradient(rgba(225, 225, 255, 0.7), rgba(225, 225, 225, 0.7)), url(../assets/photo-gallery_thumbnail.png);
+    background-repeat: no-repeat;
+    background-position: center; }
+    .photo-gallery:hover:hover .project-title {
+      display: block; }
+
 .project-title {
   text-align: center;
-  margin: 5em auto; }
+  margin: 0 auto;
+  position: relative;
+  display: none; }
   .project-title h4 {
+    font-size: 2.5em; }
+  .project-title::after {
+    content: '';
+    position: absolute;
+    display: block;
     font-family: "Abel", sans-serif;
-    font-size: 1.5em;
-    color: black; }
+    color: black;
+    z-index: 1; }
 
 /*=========== medium breakpoint ==============*/
 @media screen and (min-width: 650px) {
