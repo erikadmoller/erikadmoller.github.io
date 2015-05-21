@@ -7,6 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="../bower_components/normalize.css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="../css/style.css">
 		<link href='http://fonts.googleapis.com/css?family=Abel|Tenor+Sans|Arapey:400italic|Italiana' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="../assets/ionicons.css">
 	</head>
 	<body>
 		<header>
@@ -15,7 +16,7 @@
 				<h3>Front End Developer</h3>
 				<nav>
 					<ul>
-						<li><a href="site/portfolio.html">Portfolio</a></li>
+						<li><a href="portfolio.html">Portfolio</a></li>
 						<li><a href="contact.html">Contact Me</a></li>
 						<li><a href="resume.html">Resume</a></li>
 					</ul>
@@ -28,13 +29,22 @@
 				<h1>Contact Me</h1>
 			</div>
 			<div class="wrapper">
-				<form action="http://formspree.io/erikadmoller@gmail.com"
-			      method="POST">
-				    <input type="email" name="_replyto" placeholder="Your email address">
-				    <input type="text" name="body" placeholder="Message">
-				    <input type="submit" value="Send">
-				</form>
+				<div class="row">
+					<form class="contact-form" action="http://formspree.io/erikadmoller@gmail.com"
+				      method="POST">
+					    <input class="form-box" type="email" name="_replyto" placeholder="Your email address">
+					    <textarea class="form-box message-box" type="text" name="body" placeholder="Message"></textarea>
+					    <input class="submit-box" type="submit" value="Send">
+					</form>
+				</div>
 			</div>
 		</section>
+		<footer class="footer-wrapper">
+			<div class="footer">
+				<a href="https://twitter.com/erikadmoller" class="ion-social-twitter-outline icons"></a>
+				<a href="https://github.com/erikadmoller" class="ion-social-github-outline icons"></a>
+				<a href="site/contact.html" class="ion-ios-email-outline icons"></a>
+			</div>
+		</footer>
 	</body>
 </html>

@@ -1,16 +1,17 @@
 /*Variables*/
 body {
-  background-color: #EBEAE8; }
+  background-color: #FEFFE6; }
 
 header {
   display: block;
   margin: 0 8em;
-  margin-top: 2em; }
+  margin-top: 2.3em; }
   header h2 {
     font-weight: 400;
     text-align: left;
     margin: 0; }
   header h3 {
+    font-style: italic;
     font-weight: 400;
     text-align: left;
     margin: 0;
@@ -31,7 +32,7 @@ header {
       font-size: 1.3em;
       text-transform: uppercase; }
   header .x-line {
-    background-color: #DEDDDC;
+    background-color: #FFFB8B;
     height: 1px;
     clear: both; }
 
@@ -46,7 +47,7 @@ h3 {
   font-family: "Arapey", serif; }
 
 h2, h3 {
-  font-family: "Italiana", serif; }
+  font-family: "Arapey", serif; }
 
 h4 {
   font-family: "Abel", sans-serif; }
@@ -56,10 +57,10 @@ p {
 
 /*======font size=======*/
 h1 {
-  font-size: 40px; }
+  font-size: 50px; }
 
 h2 {
-  font-size: 1.5em; }
+  font-size: 2.1em; }
 
 h3 {
   font-size: 1.2em; }
@@ -71,10 +72,10 @@ p {
   font-size: 20px; }
 
 .main-title {
-  margin-top: 120px;
+  margin: 60px 0;
   text-align: center;
   font-style: italic;
-  font-weight: 400; }
+  font-weight: 700; }
 
 ul {
   list-style: none; }
@@ -85,6 +86,61 @@ ul {
   .wrapper .box {
     padding: 0 3em;
     vertical-align: top; }
+  .wrapper .graph {
+    width: 49%;
+    height: 19em;
+    display: inline-block;
+    vertical-align: top;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black; }
+    .wrapper .graph .circle-1, .wrapper .graph .circle-2, .wrapper .graph .circle-3, .wrapper .graph .circle-4, .wrapper .graph .circle-5 {
+      width: 3em;
+      height: 3em;
+      border-radius: 100%;
+      display: inline-block;
+      position: relative; }
+    .wrapper .graph .circle-1 {
+      background-color: #B21212;
+      top: 10px;
+      left: 50px; }
+    .wrapper .graph .circle-2 {
+      background-color: #075F87;
+      top: 20px;
+      left: 100px; }
+    .wrapper .graph .circle-3 {
+      background-color: #0CA1E8;
+      top: 30px;
+      left: 150px; }
+    .wrapper .graph .circle-4 {
+      background-color: #FFF00D;
+      top: 40px;
+      left: 100px; }
+    .wrapper .graph .circle-5 {
+      background-color: #FF0000;
+      top: 50px;
+      left: 120px; }
+  .wrapper .key {
+    width: 45%;
+    height: 20em;
+    background-color: #efefef;
+    display: inline-block; }
+  .wrapper .y-axis {
+    transform: rotate(270deg);
+    transform-origin: left top 0;
+    display: inline-block;
+    margin: 0;
+    font-family: "Abel", sans-serif;
+    font-size: 1em; }
+    .wrapper .y-axis p {
+      margin: 0; }
+  .wrapper .x-axis {
+    margin: 0;
+    font-family: "Abel", sans-serif;
+    font-size: 1em;
+    text-indent: 3.5em;
+    display: inline-block; }
+    .wrapper .x-axis p {
+      margin: 0; }
   .wrapper h4 {
     margin: 0.5em 0;
     font-style: normal;
@@ -92,7 +148,7 @@ ul {
   .wrapper .line {
     width: 0.1em;
     height: 12em;
-    background-color: #DEDDDC;
+    background-color: #FFFB8B;
     display: inline-block;
     margin: 2em 0; }
   .wrapper ul {
@@ -114,10 +170,16 @@ a:hover {
   cursor: pointer;
   text-decoration: none; }
 
+.social-box {
+  text-align: center; }
+
 /*========portfolio==========*/
 .section {
-  background-color: #ffffff;
   padding-top: 1em; }
+
+.active-box {
+  background-color: #F0F2AE;
+  padding: 0 1em; }
 
 .name-other {
   font-size: 1.6em; }
@@ -126,7 +188,7 @@ a:hover {
   width: 15em;
   height: 15em;
   margin: 2em 1em;
-  background-color: #DEDDDC;
+  background-color: #FFFB8B;
   display: inline-block;
   vertical-align: top; }
 
@@ -202,7 +264,9 @@ a:hover {
   color: #616161;
   text-align: center;
   margin: 0 auto;
-  font-family: "Italiana", serif; }
+  font-family: "Arapey", serif;
+  font-style: italic;
+  font-weight: 400; }
   .project-title a {
     color: inherit;
     text-decoration: none;
@@ -215,7 +279,7 @@ a:hover {
 .project-header {
   color: #616161;
   text-align: left;
-  font-family: "Italiana", serif;
+  font-family: "Arapey", serif;
   margin-bottom: 3em; }
   .project-header h1 {
     margin: 0.5em 0; }
@@ -235,6 +299,54 @@ a:hover {
   display: inline-block;
   width: 60%;
   vertical-align: top; }
+
+/*===========contact form==============*/
+.row {
+  margin: 5em 8em 2em 8em; }
+
+.contact-form {
+  margin: 0 auto; }
+  .contact-form .form-box {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1em;
+    outline: none;
+    padding: 10px;
+    margin: 5px 1px 30px 0px;
+    border: none; }
+  .contact-form .form-box:focus {
+    border: 1px solid #51cbee; }
+  .contact-form .message-box {
+    height: 10em; }
+  .contact-form .submit-box {
+    margin: 0 40%;
+    width: 8em;
+    margin-bottom: 2em;
+    padding: 0.5em 0.5em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-family: "Abel", sans-serif;
+    font-size: 1.3em;
+    background-color: #8FDBD4; }
+  .contact-form .submit-box:focus {
+    border: 1px solid #51cbee; }
+
+/*============footer===========*/
+.footer-wrapper {
+  margin: 2em auto;
+  width: 12em;
+  clear: both; }
+
+.footer {
+  padding: 1em 0; }
+
+.icons {
+  font-size: 2em;
+  height: 100%;
+  display: inline-block;
+  margin: 0 0.5em; }
 
 /*=========== medium breakpoint ==============*/
 @media screen and (min-width: 650px) {

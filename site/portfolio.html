@@ -7,6 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="../bower_components/normalize.css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="../css/style.css">
 		<link href='http://fonts.googleapis.com/css?family=Abel|Tenor+Sans|Arapey:400italic|Italiana' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="../assets/ionicons.css">
 	</head>
 	<body>
 		<header>
@@ -15,7 +16,7 @@
 				<h3>Front End Developer</h3>
 				<nav>
 					<ul>
-						<li><a href="portfolio.html">Portfolio</a></li>
+						<li class="active-box"><a href="portfolio.html">Portfolio</a></li>
 						<li><a href="contact.html">Contact Me</a></li>
 						<li><a href="resume.html">Resume</a></li>
 					</ul>
@@ -28,14 +29,67 @@
 				<h1>Portfolio</h1>
 			</div>
 			<div class="wrapper">
-				<a href="speak.html">
+				<!-- <a href="speak.html">
 					<section class="snippet speak">
 						<div class="snippet-title">
 							<h4>Speak</h4>
 						</div>
 					</section>
-				</a>
-				<a href="shero.html">
+				</a> -->
+				<section class="section">
+					<div class="project-title">
+						<h1>Speak</h1>
+						<h4><a href="https://speak-out.herokuapp.com/#/register">View live</a> or see on <a href="https://github.com/erikadmoller/final-project">Github</a></h4>
+					</div>
+					<div class="wrapper">
+						<div class="site-view">
+						</div>
+						<iframe width="828" height="621" src="https://www.youtube.com/embed/ztBy0SUdcJc?rel=0" frameborder="0" allowfullscreen></iframe>
+						<div class="project-details">
+							<div class="project-header col-lf">
+								<h1>Tech</h1>
+								<ul>
+									<li>AngularJS</li>
+									<li>Lodash</li>
+									<li>HTML5</li>
+									<li>Sails</li>
+									<li>Sass</li>
+									<li>Twilio</li>
+								</ul>
+							</div>
+							<div class="project-header col-rt">
+								<h1>About</h1>
+								<p>If casting your vote was an online experience, what would that look like? In this web app called Speak the user is able to register themselves to vote and find current issues to choose from listed by their local and state governments. After casting their vote, the user can elect to receive a text message with a link to a web page of status polls on each election.</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="section">
+					<div class="project-title">
+						<h1>I Need A Shero</h1>
+						<h4><a href="https://women-power.herokuapp.com">View live</a> or see on <a href="https://github.com/kbalducci/womenpower">Github</a></h4>
+					</div>
+					<div class="wrapper">
+						<div class="site-view">
+						</div>
+						<iframe width="828" height="466" src="https://www.youtube.com/embed/CeZcDnJwk3Y?rel=0" frameborder="0" allowfullscreen></iframe>
+						<div class="project-details">
+							<div class="project-header col-lf">
+								<h1>Tech</h1>
+								<ul>
+									<li>AngularJS</li>
+									<li>Sass</li>
+									<li>HTML5</li>
+								</ul>
+							</div>
+							<div class="project-header col-rt">
+								<h1>About</h1>
+								<p>I Need A Shero is an app designed to inspire women facing various issues in multiple aspects of their lives (personal, student, professional). Users create an account and then have access to our database of inspirational women and their applicable quotations.</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- <a href="shero.html">
 					<section class="snippet shero">
 						<div class="snippet-title">
 							<h4>I Need A Shero</h4>
@@ -48,8 +102,41 @@
 							<h4>Image Gallery</h4>
 						</div>
 					</section>
-				</a>
+				</a> -->
 			</div>
 		</section>
+		<section class="section">
+			<div class="project-title">
+				<h1>Image Gallery</h1>
+				<h4><a href="https://img-gal.herokuapp.com/">View live</a> or see on <a href="https://github.com/erikadmoller/image-gallery">Github</a></h4>
+			</div>
+			<div class="wrapper">
+				<div class="site-view">
+				</div>
+				<div class="project">
+				</div>
+				<div class="project-details">
+					<div class="project-header col-lf">
+						<h1>Tech</h1>
+						<ul>
+							<li>Angular</li>
+							<li>Underscore</li>
+							<li>HTML5</li>
+						</ul>
+					</div>
+					<div class="project-header col-rt">
+						<h1>About</h1>
+						<p>Image Gallery allows users to upload a URL that is a .jpg with a caption that gets saved to their gallery.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer-wrapper">
+			<div class="footer">
+				<a href="https://twitter.com/erikadmoller" class="ion-social-twitter-outline icons"></a>
+				<a href="https://github.com/erikadmoller" class="ion-social-github-outline icons"></a>
+				<a href="site/contact.html" class="ion-ios-email-outline icons"></a>
+			</div>
+		</footer>
 	</body>
 </html>
