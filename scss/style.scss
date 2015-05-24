@@ -16,13 +16,11 @@ header {
 	margin-top: 2.3em;
 
 	h2 {
-	font-weight: 400;
+	// font-weight: 400;
 	text-align: left;
 	margin: 0;
-	// font-style: italic;
-	// display: inline-block;
-	// text-transform: uppercase;
-
+	font-style: italic;
+	font-weight: 700;
 	}
 
 	h3 {
@@ -51,16 +49,6 @@ header {
 			font-weight: 400;
 			font-size: 1.3em;
 			text-transform: uppercase;
-
-			// a {
-			// 	color: inherit;
-			// 	text-decoration: none;
-			// }
-			// a:hover {
-			// 	color: black;
-			// 	text-decoration: none;
-			// 	cursor: pointer;
-			// }
 		}
 	}
 
@@ -73,8 +61,14 @@ header {
 
 /*======font families======*/
 
-h1, h2, h4 {
+h1, h4 {
 	color: black;
+}
+
+h2 {
+	color: #EF7C22;
+	// text-shadow: -3px 3px 0 #FEFFE6, -4.5px 4.5px 0 #000000;
+	text-shadow: -1.5px 1.5px 0 #FEFFE6, -2.5px 2.5px 0 #EDCB52;
 }
 
 h3 {
@@ -89,9 +83,11 @@ h2, h3 {
 }
 h4 {
 	font-family: $copy;
+	margin: 0;
 }
 p {
 	font-family: $copy;
+	margin: 0;
 }
 
 /*======font size=======*/
@@ -113,7 +109,7 @@ p {
 }
 
 .main-title {
-	margin: 60px 0;
+	margin: 70px 0;
 	text-align: center;
 	font-style: italic;
 	font-weight: 700;
@@ -127,130 +123,148 @@ ul {
  	 margin: 0 auto;
  	 color: black;
 
-	.box {
-		padding: 0 3em;
-		vertical-align: top;
+/*========graph==========*/
+
+	.col-lf-wrapper {
+		width: 350px;
+		margin: 0 auto;
+		margin-bottom: 1em;
 	}
 
 	.graph {
-		width: 49%;
 		height: 19em;
-		// background-color: #ffffff;
 		display: inline-block;
 		vertical-align: top;
-		// padding: 0.5em;
-		border-left: 1px solid black;
-		border-bottom: 1px solid black;
-
-		.circle-1, .circle-2, .circle-3, .circle-4, .circle-5 {
-			width: 3em;
-			height: 3em;
-			border-radius: 100%;
-			display: inline-block;
-			position: relative;
-		}
-
-		.circle-1 {
-			background-color: #B21212;
-			top: 10px;
-  			left: 50px;
-		}
-		.circle-2 {
-			background-color: #075F87;
-			top: 20px;
-  			left: 100px;
-		}
-		.circle-3 {
-			background-color: #0CA1E8;
-			top: 30px;
-  			left: 150px;
-		}
-		.circle-4 {
-			background-color: #FFF00D;
-			top: 40px;
-  			left: 100px;
-		}
-		.circle-5 {
-			background-color: #FF0000;
-			top: 50px;
-  			left: 120px;
-		}
-
-		// .y-line {
-		// 	width: 1px;
-		// 	height: 90%;
-		// 	background-color: black;
-		// 	margin: 0;
-		// 	display: inline-block;
-		// }
-
-		// .x-line {
-		// 	width: 94%;
-		// 	height: 1px;
-		// 	background-color: black;
-		// 	margin: 0 0 0 2.1em;
-		// }
+		border-left: 2px solid black;
+		border-bottom: 2px solid black;
 	}
 
-	.key {
-		width: 45%;
-		height: 20em;
-		background-color: #efefef;
+	.circle-orange, .circle-yellow, .circle-pink, .circle-magenta, .circle-purple {
+		width: 3.5em;
+		height: 3.5em;
+		border-radius: 100%;
 		display: inline-block;
-		// padding: 0.5em;
+		position: relative;
+	}
+
+	.circle-orange {
+		background-color: #F49900;
+		top: 170px;
+		left: 0%;
+	}
+	.circle-yellow {
+		background-color: #F4C200;
+		top: 130px;
+		left: 0%;
+	}
+	.circle-pink {
+		// background-color: #FF00F1;
+		background-color: #E8430C;
+		top: 100px;
+		left: 20%;
+	}
+	.circle-magenta {
+		// background-color: #990090;
+		background-color: #FF9359;
+		top: 60px;
+		left: 20%;
+	}
+	.circle-purple {
+		// background-color: #7C00FF;
+		background-color: #BB2E46;
+		top: 30px;
+		left: 15%;
 	}
 
 	.y-axis {
 		transform: rotate(270deg);
-		transform-origin: left top 0;
+		// transform-origin: left top 0;
 		display: inline-block;
 		margin: 0;
 		font-family: $copy;
-		font-size: 1em;
-
+		// font-size: 1em;
+		vertical-align: bottom;
+		padding: 2.5em 0 1.5em 0;
 		p {
 			margin: 0;
+			font-size: 0.8em;
 		}
 	}
 
 	.x-axis {
 		margin: 0;
 		font-family: $copy;
-		font-size: 1em;
+		// font-size: 1em;
 		text-indent: 3.5em;
 		display: inline-block;
 
 		p {
-			margin: 0
+			margin: 0;
+			font-size: 0.8em;
 		}
 	}
 
-	h4 {
-		margin: 0.5em 0;
-		font-style: normal;
-		font-weight: 400;
+/*=============key chart===========*/
+
+	.col-rt-wrapper {
+		width: 350px;
+		margin: 0 auto;
 	}
 
-	.line {
-		width: 0.1em;
-		height: 12em; 
-		background-color: $line-color;
+	.key {
+		// height: 19em;
+		background-color: #FFFFAE;
+		padding: 1em;
+	}
+
+	.key-list {
+		margin: 0.6em 0;
+	}
+
+	.key-color {
+		width: 1em;
+		height: 1em;
 		display: inline-block;
-		margin: 2em 0;
+		vertical-align: top;
 	}
 
-	ul {
-		padding: 0;
-
-		li {
-			line-height: 1.5em;
-			color: black;
-			font-family: $copy;
-			font-style: normal;
-			font-weight: 400;
-			font-size: 20px;
-		}
+	.orange {
+		background-color: #F49900;
 	}
+	.yellow {
+		background-color: #F4C200;
+	}
+	.magenta {
+		background-color: #FF9359;
+	}
+	.pink {
+		background-color: #E8430C;
+	}
+	.purple {
+		background-color: #BB2E46;		
+	}
+
+	.key-details {
+		display: inline-block;
+		line-height: 20px;
+		// margin: 0.4em 0;
+		vertical-align: top;
+		width: 90%;
+	}
+
+	.key-header {
+		text-transform: uppercase;
+	}
+	.key-text {
+		color: #616161;	
+		font-size: 1.1em;	
+	}
+}
+
+h4 {
+	margin: 0;
+	font-style: normal;
+	font-weight: 400;
 }
 
 a {
@@ -259,7 +273,6 @@ a {
 }
 a:hover {
 	color: black;
-	// text-decoration: underline;
 	cursor: pointer;
 	text-decoration: none;
 }
@@ -272,14 +285,33 @@ a:hover {
 
 /*=========== medium breakpoint ==============*/
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 768px) {
 	.wrapper {
-		width: 41em;
+		width: 90%;
 
-		.box {
-			max-width: 12em;
-			display: inline-block;
+		.col-lf-wrapper {
+			float: left;
+			width: 49%;
 		}
+
+		.col-rt-wrapper {
+			width: 49%;
+			float: right;
+		}
+
+		.graph {
+			width: 85%;
+		}
+
+		.key-color {
+			width: 1.5em;
+			height: 1.5em;
+		}
+
+		.circle-orange, .circle-yellow, .circle-pink, .circle-magenta, .circle-purple {
+			width: 3em;
+			height: 3em;
+		}	
 	}
 }
 
@@ -288,6 +320,21 @@ a:hover {
 @media screen and (min-width: 960px) {
 	.wrapper {
 		width: 828px;
+
+		.col-lf-wrapper {
+			float: left;
+			width: 400px;
+		}
+
+		.key-color {
+			width: 2em;
+			height: 2em;
+		}
+
+		.circle-orange, .circle-yellow, .circle-pink, .circle-magenta, .circle-purple {
+			width: 4em;
+			height: 4em;
+		}
 	}
 }
 

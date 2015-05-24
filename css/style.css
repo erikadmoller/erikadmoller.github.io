@@ -7,9 +7,10 @@ header {
   margin: 0 8em;
   margin-top: 2.3em; }
   header h2 {
-    font-weight: 400;
     text-align: left;
-    margin: 0; }
+    margin: 0;
+    font-style: italic;
+    font-weight: 700; }
   header h3 {
     font-style: italic;
     font-weight: 400;
@@ -37,8 +38,12 @@ header {
     clear: both; }
 
 /*======font families======*/
-h1, h2, h4 {
+h1, h4 {
   color: black; }
+
+h2 {
+  color: #EF7C22;
+  text-shadow: -1.5px 1.5px 0 #FEFFE6, -2.5px 2.5px 0 #EDCB52; }
 
 h3 {
   color: #616161; }
@@ -50,10 +55,12 @@ h2, h3 {
   font-family: "Arapey", serif; }
 
 h4 {
-  font-family: "Abel", sans-serif; }
+  font-family: "Abel", sans-serif;
+  margin: 0; }
 
 p {
-  font-family: "Abel", sans-serif; }
+  font-family: "Abel", sans-serif;
+  margin: 0; }
 
 /*======font size=======*/
 h1 {
@@ -72,7 +79,7 @@ p {
   font-size: 20px; }
 
 .main-title {
-  margin: 60px 0;
+  margin: 70px 0;
   text-align: center;
   font-style: italic;
   font-weight: 700; }
@@ -82,84 +89,101 @@ ul {
 
 .wrapper {
   margin: 0 auto;
-  color: black; }
-  .wrapper .box {
-    padding: 0 3em;
-    vertical-align: top; }
+  color: black;
+  /*========graph==========*/
+  /*=============key chart===========*/ }
+  .wrapper .col-lf-wrapper {
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 1em; }
   .wrapper .graph {
-    width: 49%;
     height: 19em;
     display: inline-block;
     vertical-align: top;
-    border-left: 1px solid black;
-    border-bottom: 1px solid black; }
-    .wrapper .graph .circle-1, .wrapper .graph .circle-2, .wrapper .graph .circle-3, .wrapper .graph .circle-4, .wrapper .graph .circle-5 {
-      width: 3em;
-      height: 3em;
-      border-radius: 100%;
-      display: inline-block;
-      position: relative; }
-    .wrapper .graph .circle-1 {
-      background-color: #B21212;
-      top: 10px;
-      left: 50px; }
-    .wrapper .graph .circle-2 {
-      background-color: #075F87;
-      top: 20px;
-      left: 100px; }
-    .wrapper .graph .circle-3 {
-      background-color: #0CA1E8;
-      top: 30px;
-      left: 150px; }
-    .wrapper .graph .circle-4 {
-      background-color: #FFF00D;
-      top: 40px;
-      left: 100px; }
-    .wrapper .graph .circle-5 {
-      background-color: #FF0000;
-      top: 50px;
-      left: 120px; }
-  .wrapper .key {
-    width: 45%;
-    height: 20em;
-    background-color: #efefef;
-    display: inline-block; }
+    border-left: 2px solid black;
+    border-bottom: 2px solid black; }
+  .wrapper .circle-orange, .wrapper .circle-yellow, .wrapper .circle-pink, .wrapper .circle-magenta, .wrapper .circle-purple {
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 100%;
+    display: inline-block;
+    position: relative; }
+  .wrapper .circle-orange {
+    background-color: #F49900;
+    top: 170px;
+    left: 0%; }
+  .wrapper .circle-yellow {
+    background-color: #F4C200;
+    top: 130px;
+    left: 0%; }
+  .wrapper .circle-pink {
+    background-color: #E8430C;
+    top: 100px;
+    left: 20%; }
+  .wrapper .circle-magenta {
+    background-color: #FF9359;
+    top: 60px;
+    left: 20%; }
+  .wrapper .circle-purple {
+    background-color: #BB2E46;
+    top: 30px;
+    left: 15%; }
   .wrapper .y-axis {
     transform: rotate(270deg);
-    transform-origin: left top 0;
     display: inline-block;
     margin: 0;
     font-family: "Abel", sans-serif;
-    font-size: 1em; }
+    vertical-align: bottom;
+    padding: 2.5em 0 1.5em 0; }
     .wrapper .y-axis p {
-      margin: 0; }
+      margin: 0;
+      font-size: 0.8em; }
   .wrapper .x-axis {
     margin: 0;
     font-family: "Abel", sans-serif;
-    font-size: 1em;
     text-indent: 3.5em;
     display: inline-block; }
     .wrapper .x-axis p {
-      margin: 0; }
-  .wrapper h4 {
-    margin: 0.5em 0;
-    font-style: normal;
-    font-weight: 400; }
-  .wrapper .line {
-    width: 0.1em;
-    height: 12em;
-    background-color: #FFFB8B;
+      margin: 0;
+      font-size: 0.8em; }
+  .wrapper .col-rt-wrapper {
+    width: 350px;
+    margin: 0 auto; }
+  .wrapper .key {
+    background-color: #FFFFAE;
+    padding: 1em; }
+  .wrapper .key-list {
+    margin: 0.6em 0; }
+  .wrapper .key-color {
+    width: 1em;
+    height: 1em;
     display: inline-block;
-    margin: 2em 0; }
-  .wrapper ul {
-    padding: 0; }
-    .wrapper ul li {
-      line-height: 1.5em;
-      color: black;
-      font-family: "Abel", sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 20px; }
+    vertical-align: top; }
+  .wrapper .orange {
+    background-color: #F49900; }
+  .wrapper .yellow {
+    background-color: #F4C200; }
+  .wrapper .magenta {
+    background-color: #FF9359; }
+  .wrapper .pink {
+    background-color: #E8430C; }
+  .wrapper .purple {
+    background-color: #BB2E46; }
+  .wrapper .key-details {
+    display: inline-block;
+    line-height: 20px;
+    vertical-align: top;
+    width: 90%; }
+  .wrapper .key-header {
+    text-transform: uppercase; }
+  .wrapper .key-text {
+    color: #616161;
+    font-size: 1.1em; }
+
+h4 {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400; }
 
 a {
   color: inherit;
@@ -349,15 +373,35 @@ a:hover {
   margin: 0 0.5em; }
 
 /*=========== medium breakpoint ==============*/
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 768px) {
   .wrapper {
-    width: 41em; }
-    .wrapper .box {
-      max-width: 12em;
-      display: inline-block; } }
+    width: 90%; }
+    .wrapper .col-lf-wrapper {
+      float: left;
+      width: 49%; }
+    .wrapper .col-rt-wrapper {
+      width: 49%;
+      float: right; }
+    .wrapper .graph {
+      width: 85%; }
+    .wrapper .key-color {
+      width: 1.5em;
+      height: 1.5em; }
+    .wrapper .circle-orange, .wrapper .circle-yellow, .wrapper .circle-pink, .wrapper .circle-magenta, .wrapper .circle-purple {
+      width: 3em;
+      height: 3em; } }
 /*=========== large breakpoint ==============*/
 @media screen and (min-width: 960px) {
   .wrapper {
-    width: 828px; } }
+    width: 828px; }
+    .wrapper .col-lf-wrapper {
+      float: left;
+      width: 400px; }
+    .wrapper .key-color {
+      width: 2em;
+      height: 2em; }
+    .wrapper .circle-orange, .wrapper .circle-yellow, .wrapper .circle-pink, .wrapper .circle-magenta, .wrapper .circle-purple {
+      width: 4em;
+      height: 4em; } }
 
 /*# sourceMappingURL=style.css.map */
