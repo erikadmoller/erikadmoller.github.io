@@ -11,51 +11,80 @@ body {
 }
 
 header {
-	display: block;
-	margin: 0 8em;
+	// display: block;
+	margin: 0 2em;
 	margin-top: 2.3em;
 
+	.header-wrapper {
+		overflow: hidden;
+	}
+
+	.name {
+		float: left;
+	}
+
 	h2 {
-	// font-weight: 400;
-	text-align: left;
-	margin: 0;
-	font-style: italic;
-	font-weight: 700;
+		// font-weight: 400;
+		text-align: left;
+		margin: 0 0.3em;
+		font-style: italic;
+		font-weight: 700;
 	}
 
 	h3 {
+		width: 8em;
 		font-style: italic;
 		font-weight: 400;
 		text-align: left;
-		margin: 0;
-		display: inline-block;
+		margin: 0 0.3em;
+		// float: left;
+	}
+
+	.menu-dropdown {
+
+		float: right;
+
+		.menu-dropdown:hover {
+			cursor: pointer;
+		}
 	}
 
 	nav {
-		float: right;
+		// float: right;
+		// width: 100%;
+
+		.menu-title {
+			text-align: right;
+			cursor: pointer;
+			border-bottom: 2px solid #000000;
+
+			&:hover {
+			border-bottom: 2px solid #EDCB52;
+			}
+		}
+
+		.menu-submenu {
+			display: none;
+			cursor: auto;
+			text-align: right;
+		}
 
 		ul {
 			margin: 0;
 			padding: 0;
-			margin-top: 0em;
+			// margin-top: 2em;
 		}
 
 		li {
-			display: inline-block;
-			margin: 0 0.6em;
+			// display: inline-block;
+			// margin: 0 0.5em;
 			font-family: $copy;
 			color: #616161;
 			font-style: normal;
 			font-weight: 400;
-			font-size: 1.3em;
+			font-size: 1em;
 			text-transform: uppercase;
 		}
-	}
-
-	.x-line {
-		background-color: $line-color;
-		height: 1px;
-		clear: both;
 	}
 }
 
@@ -67,6 +96,7 @@ h1{
 }
 
 h2 {
+	font-family: $primary;
 	// color: #EF7C22;
 	color: #000000;
 	// text-shadow: -3px 3px 0 #FEFFE6, -4.5px 4.5px 0 #000000;
@@ -75,19 +105,12 @@ h2 {
 
 h3 {
 	color: #616161;
-}
-
-.main-title {
-	font-family: $primary;
-}
-
-h2, h3 {
 	font-family: $primary;
 }
 
 h4 {
 	font-family: $copy;
-	margin: 1.5em 0 0 0;
+	margin: 0;
 	font-weight: 400;
 	font-style: normal;
 	color: #000000;
@@ -101,7 +124,7 @@ p {
 /*======font size=======*/
 
 h1 {
-	font-size: 60px;
+	font-size: 40px;
 }
 h2 {
 	font-size: 2.1em;
@@ -110,22 +133,23 @@ h3 {
 	font-size: 1.2em;
 }
 h4 {
-	font-size: 1.5em;
+	font-size: 20px;
 }
 p {
 	font-size: 20px;
 }
 
+/*==============main content==============*/
+
 .main-title {
+	font-family: $primary;
 	margin: 70px 0;
 	text-align: center;
 	font-style: italic;
 	font-weight: 700;
+	// font-size: 40px;
 	a {
-	border-bottom: 2px solid #FFFA63;
-	}
-	a:hover {
-		text-decoration: none;
+	border-bottom: 2px solid #EDCB52;
 	}
 }
 
@@ -150,8 +174,11 @@ a:hover {
 }
 
 .wrapper {
- 	 margin: 0 auto;
- 	 color: black;
+ 	margin: 0 auto;
+ 	color: black;
+ 	width: 90%;
+  	max-width: 1100px;
+ 	overflow: hidden;
 
 /*========graph==========*/
 
@@ -180,18 +207,18 @@ a:hover {
 
 	.circle-orange {
 		background-color: #F49900;
-		top: 170px;
+		top: 90px;
 		left: 0%;
 	}
 	.circle-yellow {
 		background-color: #F4C200;
-		top: 130px;
+		top: 170px;
 		left: 0%;
 	}
 	.circle-pink {
 		// background-color: #FF00F1;
 		background-color: #E8430C;
-		top: 100px;
+		top: 170px;
 		left: 20%;
 	}
 	.circle-magenta {
@@ -374,6 +401,15 @@ a:hover {
 /*=========== medium breakpoint ==============*/
 
 @media screen and (min-width: 768px) {
+
+	// .main-title {
+	// 	font-size: 60px;
+	// }
+
+	h1 {
+		font-size: 60px;
+	}
+
 	.wrapper {
 		width: 90%;
 
@@ -406,6 +442,39 @@ a:hover {
 /*=========== large breakpoint ==============*/
 
 @media screen and (min-width: 960px) {
+	
+	header {
+	margin: 0 8em;
+	margin-top: 2.3em;
+
+		nav {
+
+		.menu-title {
+			display: none;
+		}
+
+		.menu-submenu {
+			display: inline-block;
+		}
+
+			ul {
+				margin-top: 2em;
+			}
+
+			li {
+				display: inline-block;
+				margin: 0 0.6em;
+				font-size: 1.2em;
+			}
+		}
+
+		// .x-line {
+		// 	background-color: #000000;
+		// 	height: 1px;
+		// 	clear: both;
+		// }
+	}
+
 	.wrapper {
 		width: 828px;
 

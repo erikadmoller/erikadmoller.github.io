@@ -3,39 +3,47 @@ body {
   background-color: #FEFFE6; }
 
 header {
-  display: block;
-  margin: 0 8em;
+  margin: 0 2em;
   margin-top: 2.3em; }
+  header .header-wrapper {
+    overflow: hidden; }
+  header .name {
+    float: left; }
   header h2 {
     text-align: left;
-    margin: 0;
+    margin: 0 0.3em;
     font-style: italic;
     font-weight: 700; }
   header h3 {
+    width: 8em;
     font-style: italic;
     font-weight: 400;
     text-align: left;
-    margin: 0;
-    display: inline-block; }
-  header nav {
+    margin: 0 0.3em; }
+  header .menu-dropdown {
     float: right; }
-    header nav ul {
-      margin: 0;
-      padding: 0;
-      margin-top: 0em; }
-    header nav li {
-      display: inline-block;
-      margin: 0 0.6em;
-      font-family: "Abel", sans-serif;
-      color: #616161;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 1.3em;
-      text-transform: uppercase; }
-  header .x-line {
-    background-color: #FFFB8B;
-    height: 1px;
-    clear: both; }
+    header .menu-dropdown .menu-dropdown:hover {
+      cursor: pointer; }
+  header nav .menu-title {
+    text-align: right;
+    cursor: pointer;
+    border-bottom: 2px solid #000000; }
+    header nav .menu-title:hover {
+      border-bottom: 2px solid #EDCB52; }
+  header nav .menu-submenu {
+    display: none;
+    cursor: auto;
+    text-align: right; }
+  header nav ul {
+    margin: 0;
+    padding: 0; }
+  header nav li {
+    font-family: "Abel", sans-serif;
+    color: #616161;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    text-transform: uppercase; }
 
 /*======font families, color, spacing======*/
 h1 {
@@ -43,21 +51,17 @@ h1 {
   color: #000000; }
 
 h2 {
+  font-family: "Arapey", serif;
   color: #000000;
   text-shadow: -1.5px 1.5px 0 #FEFFE6, -2.5px 2.5px 0 #EDCB52; }
 
 h3 {
-  color: #616161; }
-
-.main-title {
-  font-family: "Arapey", serif; }
-
-h2, h3 {
+  color: #616161;
   font-family: "Arapey", serif; }
 
 h4 {
   font-family: "Abel", sans-serif;
-  margin: 1.5em 0 0 0;
+  margin: 0;
   font-weight: 400;
   font-style: normal;
   color: #000000; }
@@ -68,7 +72,7 @@ p {
 
 /*======font size=======*/
 h1 {
-  font-size: 60px; }
+  font-size: 40px; }
 
 h2 {
   font-size: 2.1em; }
@@ -77,20 +81,20 @@ h3 {
   font-size: 1.2em; }
 
 h4 {
-  font-size: 1.5em; }
+  font-size: 20px; }
 
 p {
   font-size: 20px; }
 
+/*==============main content==============*/
 .main-title {
+  font-family: "Arapey", serif;
   margin: 70px 0;
   text-align: center;
   font-style: italic;
   font-weight: 700; }
   .main-title a {
-    border-bottom: 2px solid #FFFA63; }
-  .main-title a:hover {
-    text-decoration: none; }
+    border-bottom: 2px solid #EDCB52; }
 
 ul {
   list-style: none; }
@@ -113,6 +117,9 @@ a:hover {
 .wrapper {
   margin: 0 auto;
   color: black;
+  width: 90%;
+  max-width: 1100px;
+  overflow: hidden;
   /*========graph==========*/
   /*=============key chart===========*/ }
   .wrapper .col-lf-wrapper {
@@ -133,15 +140,15 @@ a:hover {
     position: relative; }
   .wrapper .circle-orange {
     background-color: #F49900;
-    top: 170px;
+    top: 90px;
     left: 0%; }
   .wrapper .circle-yellow {
     background-color: #F4C200;
-    top: 130px;
+    top: 170px;
     left: 0%; }
   .wrapper .circle-pink {
     background-color: #E8430C;
-    top: 100px;
+    top: 170px;
     left: 20%; }
   .wrapper .circle-magenta {
     background-color: #FF9359;
@@ -259,13 +266,10 @@ a:hover {
   color: #CCCCCC; }
 
 .section {
-  margin-bottom: 13em; }
+  margin-bottom: 8em; }
 
-.project-1 {
-  background-image: url(../assets/speak_snippet.png);
-  background-repeat: no-repeat;
-  height: 718px;
-  background-position: center; }
+img {
+  max-width: 100%; }
 
 .project-2 {
   background-image: url(../assets/shero_snippet.png);
@@ -293,7 +297,7 @@ a:hover {
   text-decoration: none; }
 
 .project-details {
-  padding: 0 3em;
+  padding: 0 1em;
   margin: 0 auto; }
 
 .project-header {
@@ -314,38 +318,59 @@ a:hover {
     margin: 0;
     line-height: 30px; }
 
-/*==========project details============*/
-.col-lf {
-  display: inline-block;
-  width: 35%;
-  vertical-align: top; }
+@media screen and (min-width: 550px) {
+  .col-lf {
+    display: inline-block;
+    width: 35%;
+    vertical-align: top; }
 
-.col-rt {
-  display: inline-block;
-  width: 64%;
-  vertical-align: top; }
+  .col-rt {
+    display: inline-block;
+    width: 64%;
+    vertical-align: top; } }
+@media screen and (min-width: 768px) {
+  .project-details {
+    padding: 0 3em;
+    margin: 0 auto; }
 
+  .project-header {
+    text-align: left; }
+    .project-header h1 {
+      font-family: "Arapey", serif;
+      font-style: italic;
+      font-weight: 700; }
+    .project-header ul {
+      margin: 0;
+      padding: 0;
+      font-family: "Abel", sans-serif;
+      font-size: 20px;
+      text-align: left;
+      line-height: 30px; }
+    .project-header p {
+      color: black;
+      margin: 0;
+      line-height: 30px; } }
 /*===========contact form==============*/
 .row {
-  margin: 5em 8em 2em 8em; }
+  margin: 0; }
 
 .contact-form {
   margin: 0 auto; }
   .contact-form .form-box {
     display: block;
-    width: 100%;
     border-radius: 5px;
     font-size: 1em;
     outline: none;
     padding: 10px;
-    margin: 5px 1px 30px 0px;
-    border: 1px solid #CCCCCC; }
+    border: 1px solid #CCCCCC;
+    width: 90%;
+    margin: 5px auto; }
   .contact-form .form-box:focus {
     border: 1px solid #51cbee; }
   .contact-form .message-box {
     height: 10em; }
   .contact-form .submit-box {
-    margin: 0 40%;
+    margin: 0 auto;
     width: 8em;
     margin-bottom: 2em;
     padding: 0.5em 0.5em;
@@ -358,8 +383,14 @@ a:hover {
   .contact-form .submit-box:focus {
     border: 1px solid #51cbee; }
 
+@media screen and (min-width: 768px) {
+  .row {
+    margin: 5em 8em 2em 8em; } }
 /*=========== medium breakpoint ==============*/
 @media screen and (min-width: 768px) {
+  h1 {
+    font-size: 60px; }
+
   .wrapper {
     width: 90%; }
     .wrapper .col-lf-wrapper {
@@ -378,6 +409,20 @@ a:hover {
       height: 3em; } }
 /*=========== large breakpoint ==============*/
 @media screen and (min-width: 960px) {
+  header {
+    margin: 0 8em;
+    margin-top: 2.3em; }
+    header nav .menu-title {
+      display: none; }
+    header nav .menu-submenu {
+      display: inline-block; }
+    header nav ul {
+      margin-top: 2em; }
+    header nav li {
+      display: inline-block;
+      margin: 0 0.6em;
+      font-size: 1.2em; }
+
   .wrapper {
     width: 828px; }
     .wrapper .col-lf-wrapper {

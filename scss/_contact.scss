@@ -1,7 +1,7 @@
 /*===========contact form==============*/
 
 .row {
-	margin: 5em 8em 2em 8em;
+	margin: 0;
 }
 
 .contact-form {
@@ -9,13 +9,15 @@
 
 	.form-box {
 		display: block;
-		width: 100%;
+		// width: 100%;
 		border-radius: 5px;
 		font-size: 1em;	  
 		outline: none;
 		padding: 10px;
-		margin: 5px 1px 30px 0px;
+		// margin: 5px 1px 30px 0px;
 		border: 1px solid #CCCCCC;
+		width: 90%;
+		margin: 5px auto;
 	}
 	 
 	.form-box:focus {
@@ -27,7 +29,7 @@
 	}
 
 	.submit-box {
-		margin: 0 40%;
+		margin: 0 auto;
 		width: 8em;
 		margin-bottom: 2em;
 		padding: 0.5em 0.5em;
@@ -41,5 +43,11 @@
 
 	.submit-box:focus {
 		border: 1px solid rgba(81, 203, 238, 1);		
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.row {
+		margin: 5em 8em 2em 8em;
 	}
 }

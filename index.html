@@ -12,17 +12,26 @@
 	</head>
 	<body>
 		<header>
-			<div class="name">
-				<h2>Erika Moller</h2>
-				<h3>Front End Developer</h3>
-				<nav>
-					<ul>
-						<li class="active-box"><a href="index.html">Skills & Interests</a></li>
-						<li><a href="site/portfolio.html">Portfolio</a></li>
-						<li><a href="site/contact.html">Contact Me</a></li>
-						<li><a href="assets/erika.moller_resume.pdf">Resume</a></li>
-					</ul>
-				</nav>
+			<div class="header-wrapper">
+				<div class="name">
+					<h2>Erika Moller</h2>
+					<h3>Front End Developer</h3>
+				</div>
+				<div class="menu-dropdown">
+					<nav>
+						<div class="menu-title">
+							<h4>Menu</h4>
+						</div>
+						<div class="menu-submenu">
+							<ul>
+								<li class="active-box"><a href="index.html">Skills & Interests</a></li>
+								<li><a href="site/portfolio.html">Portfolio</a></li>
+								<li><a href="site/contact.html">Contact Me</a></li>
+								<li><a href="assets/erika.moller_resume.pdf">Resume</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
 			</div>
 			<div class="x-line"></div>
 		</header>
@@ -46,18 +55,7 @@
 						</div>
 						<div class="circle-orange">
 						</div>
-						<!-- <div class="x-line">
-						</div> -->
-	<!-- 					<h4>3 months</h4>
-							<ul>
-								<li>HTML5</li>
-								<li>CSS3/Bootstrap/Sass</li>
-								<li>Git/Github</li>
-								<li>jQuery</li>
-								<li>Backbone/AngularJS</li>
-								<li>Responsive Websites</li>
-							</ul>
-	 -->			</section>
+					</section>
 	 				<div class="x-axis"> 
 	 					<p>Interest</p>
 	 				</div>
@@ -157,5 +155,7 @@
 				<a href="site/contact.html" class="ion-ios-email-outline icons"></a>
 			</div>
 		</footer>
+		<script src="bower_components/jquery/dist/jquery.min.js" type="text/Javascript"></script>
+		<script src="scripts/main.js"></script>
 	</body>
 </html>

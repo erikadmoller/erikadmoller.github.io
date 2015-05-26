@@ -7,7 +7,9 @@ $copy: 'Abel', sans-serif;
 }
 
 .section {
-	margin-bottom: 13em;
+	margin-bottom: 8em;
+	// width: 90%;
+	// margin: 0 auto;
 }
 
 // .speak {
@@ -47,13 +49,9 @@ $copy: 'Abel', sans-serif;
 // 	}
 // }
 
-.project-1 {
-	background-image: url(../assets/speak_snippet.png);	
-	background-repeat: no-repeat;
-	height: 718px;
-	background-position: center;
-	// background-size: 100%;
-	// margin-bottom: 3em;
+
+img {
+	max-width: 100%;
 }
 
 .project-2 {
@@ -93,7 +91,7 @@ $copy: 'Abel', sans-serif;
 }
 
 .project-details {
-	padding: 0 3em;
+	padding: 0 1em;
 	margin: 0 auto;
 }
 
@@ -122,16 +120,55 @@ $copy: 'Abel', sans-serif;
 	}
 }
 
-/*==========project details============*/
 
-.col-lf {
-	display: inline-block;
-	width: 35%;
-	vertical-align: top;
+@media screen and (min-width: 550px) {
+	.col-lf {
+		display: inline-block;
+		width: 35%;
+		vertical-align: top;
+	}
+
+	.col-rt {
+		display: inline-block;
+		width: 64%;
+		vertical-align: top;
+	}
 }
 
-.col-rt {
-	display: inline-block;
-	width: 64%;
-	vertical-align: top;
+@media screen and (min-width: 768px) {
+
+	.project-details {
+		padding: 0 3em;
+		margin: 0 auto;
+	}
+
+	.project-header {
+		text-align: left;
+
+		h1 {
+			font-family: $primary;
+			font-style: italic;
+			font-weight: 700;
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+			font-family: $copy;
+			font-size: 20px;
+			text-align: left;
+			line-height: 30px;
+		}
+
+		p {
+			color: black;
+			margin: 0;
+			line-height: 30px;
+		}
+	}
+
+}
+
+@media screen and (min-width: 960px) {
+
 }
