@@ -3,52 +3,12 @@
 $copy: 'Abel', sans-serif;
 
 .active-box {
-	color: #CCCCCC;
+	color: #EDCB52;
 }
 
 .section {
 	margin-bottom: 8em;
-	// width: 90%;
-	// margin: 0 auto;
 }
-
-// .speak {
-// 	background-image: url(../assets/speak_thumbnail.png);
-// 	background-repeat: no-repeat;
-// 	background-position: center;
-// 	background-size: 220%;
-
-
-// 	&:hover {
-// 		background-image: linear-gradient(rgba(225, 225, 255, 0.7), rgba(225, 225, 225, 0.7)), url(../assets/speak_thumbnail.png);
-// 		background-repeat: no-repeat;
-// 		background-position: center;
-// 		&:hover .snippet-title {
-// 			display: block;
-// 		}
-// 	}
-// }
-
-// .snippet-title {
-// 	text-align: center;
-// 	margin: 0 auto;
-// 	position: relative;
-// 	display: none;
-
-// 	h4 {
-// 		font-size: 2.5em;
-// 	}
-
-// 	&::after {
-// 		content: '';
-// 		position: absolute;
-// 		display: block;
-// 		font-family: $copy;
-// 		color: black;
-// 		z-index: 1;	
-// 	}
-// }
-
 
 img {
 	max-width: 100%;

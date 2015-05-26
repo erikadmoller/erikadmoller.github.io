@@ -110,7 +110,7 @@ a:hover {
   transition-property: color;
   transition-duration: 0.5s;
   transition-delay: 0s;
-  color: #CCCCCC;
+  color: #EDCB52;
   cursor: pointer;
   text-decoration: none; }
 
@@ -263,7 +263,7 @@ a:hover {
 
 /*========portfolio==========*/
 .active-box {
-  color: #CCCCCC; }
+  color: #EDCB52; }
 
 .section {
   margin-bottom: 8em; }
@@ -370,7 +370,7 @@ img {
   .contact-form .message-box {
     height: 10em; }
   .contact-form .submit-box {
-    margin: 0 auto;
+    margin: 0 35%;
     width: 8em;
     margin-bottom: 2em;
     padding: 0.5em 0.5em;
