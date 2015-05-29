@@ -183,13 +183,14 @@ a:hover {
 /*========graph==========*/
 
 	.col-lf-wrapper {
-		width: 350px;
+		// width: 350px;
 		margin: 0 auto;
 		margin-bottom: 70px;
 	}
 
 	.graph {
 		height: 19em;
+		width: 90%;
 		float: left;
 		// display: inline-block;
 		vertical-align: top;
@@ -198,11 +199,19 @@ a:hover {
 	}
 
 	.circle-orange, .circle-yellow, .circle-pink, .circle-magenta, .circle-purple {
-		width: 3.5em;
-		height: 3.5em;
+		// width: 3.5em;
+		// height: 3.5em;
 		border-radius: 100%;
 		display: inline-block;
 		position: relative;
+	}
+
+	.blurbs {
+		font-size: 1em;
+		line-height: 13px;
+		text-align: center;
+		padding: 1em;
+		border-radius: 100%;
 	}
 
 	.circle-orange {
@@ -223,15 +232,21 @@ a:hover {
 	}
 	.circle-magenta {
 		// background-color: #990090;
-		background-color: #FF9359;
-		top: 60px;
-		left: 20%;
+		// background-color: #FF9359;
+		// top: 60px;
+		// left: 20%;
 	}
 	.circle-purple {
 		// background-color: #7C00FF;
-		background-color: #BB2E46;
-		top: 30px;
-		left: 15%;
+		// top: 30px;
+		// left: 15%;
+		// margin: 0 auto;
+
+		p {
+			background-color: #BB2E46;
+			width: 4em;
+			height: 4em;
+		}
 	}
 
 	.y-axis {
@@ -313,7 +328,7 @@ a:hover {
 /*=============key chart===========*/
 
 	.col-rt-wrapper {
-		width: 350px;
+		// width: 350px;
 		margin: 0 auto;
 	}
 
@@ -410,33 +425,33 @@ a:hover {
 		font-size: 60px;
 	}
 
-	.wrapper {
-		width: 90%;
+	// .wrapper {
+	// 	width: 90%;
 
-		.col-lf-wrapper {
-			float: left;
-			width: 49%;
-		}
+	// 	.col-lf-wrapper {
+	// 		float: left;
+	// 		width: 49%;
+	// 	}
 
-		.col-rt-wrapper {
-			width: 49%;
-			float: right;
-		}
+	// 	.col-rt-wrapper {
+	// 		width: 49%;
+	// 		float: right;
+	// 	}
 
-		.graph {
-			width: 85%;
-		}
+	// 	.graph {
+	// 		width: 85%;
+	// 	}
 
-		.key-color {
-			width: 1.5em;
-			height: 1.5em;
-		}
+	// 	.key-color {
+	// 		width: 1.5em;
+	// 		height: 1.5em;
+	// 	}
 
-		.circle-orange, .circle-yellow, .circle-pink, .circle-magenta, .circle-purple {
-			width: 3em;
-			height: 3em;
-		}	
-	}
+	// 	.circle-orange, .circle-yellow, .circle-pink, .circle-magenta, .circle-purple {
+	// 		width: 3em;
+	// 		height: 3em;
+	// 	}	
+	// }
 }
 
 /*=========== large breakpoint ==============*/
@@ -475,33 +490,33 @@ a:hover {
 		// }
 	}
 
-	.wrapper {
-		width: 828px;
+	// .wrapper {
+	// 	width: 828px;
 
-		.col-lf-wrapper {
-			float: left;
-			width: 400px;
-		}
+	// 	.col-lf-wrapper {
+	// 		float: left;
+	// 		width: 400px;
+	// 	}
 
-		.key-color {
-			width: 2em;
-			height: 2em;
-		}
+	// 	.key-color {
+	// 		width: 2em;
+	// 		height: 2em;
+	// 	}
 
-		.circle-orange, .circle-yellow, .circle-pink, .circle-magenta, .circle-purple {
-			width: 4em;
-			height: 4em;
-		}
+	// 	.circle-orange, .circle-yellow, .circle-pink, .circle-magenta, .circle-purple {
+	// 		width: 4em;
+	// 		height: 4em;
+	// 	}
 
-		.x-arrow {
-			width: 16em;
-			height: 1px;
-			background-color: black;
-			display: inline-block;
-			position: relative;
-			top: -5px;
-			left: 13px;
-		}
-	}
+	// 	.x-arrow {
+	// 		width: 16em;
+	// 		height: 1px;
+	// 		background-color: black;
+	// 		display: inline-block;
+	// 		position: relative;
+	// 		top: -5px;
+	// 		left: 13px;
+	// 	}
+	// }
 }
 

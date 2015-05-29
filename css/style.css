@@ -123,21 +123,25 @@ a:hover {
   /*========graph==========*/
   /*=============key chart===========*/ }
   .wrapper .col-lf-wrapper {
-    width: 350px;
     margin: 0 auto;
     margin-bottom: 70px; }
   .wrapper .graph {
     height: 19em;
+    width: 90%;
     float: left;
     vertical-align: top;
     border-left: 2px solid black;
     border-bottom: 2px solid black; }
   .wrapper .circle-orange, .wrapper .circle-yellow, .wrapper .circle-pink, .wrapper .circle-magenta, .wrapper .circle-purple {
-    width: 3.5em;
-    height: 3.5em;
     border-radius: 100%;
     display: inline-block;
     position: relative; }
+  .wrapper .blurbs {
+    font-size: 1em;
+    line-height: 13px;
+    text-align: center;
+    padding: 1em;
+    border-radius: 100%; }
   .wrapper .circle-orange {
     background-color: #F49900;
     top: 90px;
@@ -150,14 +154,10 @@ a:hover {
     background-color: #E8430C;
     top: 170px;
     left: 20%; }
-  .wrapper .circle-magenta {
-    background-color: #FF9359;
-    top: 60px;
-    left: 20%; }
-  .wrapper .circle-purple {
+  .wrapper .circle-purple p {
     background-color: #BB2E46;
-    top: 30px;
-    left: 15%; }
+    width: 4em;
+    height: 4em; }
   .wrapper .y-axis {
     transform: rotate(270deg);
     display: inline-block;
@@ -208,7 +208,6 @@ a:hover {
     left: 5px;
     top: -2px; }
   .wrapper .col-rt-wrapper {
-    width: 350px;
     margin: 0 auto; }
   .wrapper .key {
     background-color: none;
@@ -389,24 +388,7 @@ img {
 /*=========== medium breakpoint ==============*/
 @media screen and (min-width: 768px) {
   h1 {
-    font-size: 60px; }
-
-  .wrapper {
-    width: 90%; }
-    .wrapper .col-lf-wrapper {
-      float: left;
-      width: 49%; }
-    .wrapper .col-rt-wrapper {
-      width: 49%;
-      float: right; }
-    .wrapper .graph {
-      width: 85%; }
-    .wrapper .key-color {
-      width: 1.5em;
-      height: 1.5em; }
-    .wrapper .circle-orange, .wrapper .circle-yellow, .wrapper .circle-pink, .wrapper .circle-magenta, .wrapper .circle-purple {
-      width: 3em;
-      height: 3em; } }
+    font-size: 60px; } }
 /*=========== large breakpoint ==============*/
 @media screen and (min-width: 960px) {
   header {
@@ -421,26 +403,6 @@ img {
     header nav li {
       display: inline-block;
       margin: 0 0.6em;
-      font-size: 1.2em; }
-
-  .wrapper {
-    width: 828px; }
-    .wrapper .col-lf-wrapper {
-      float: left;
-      width: 400px; }
-    .wrapper .key-color {
-      width: 2em;
-      height: 2em; }
-    .wrapper .circle-orange, .wrapper .circle-yellow, .wrapper .circle-pink, .wrapper .circle-magenta, .wrapper .circle-purple {
-      width: 4em;
-      height: 4em; }
-    .wrapper .x-arrow {
-      width: 16em;
-      height: 1px;
-      background-color: black;
-      display: inline-block;
-      position: relative;
-      top: -5px;
-      left: 13px; } }
+      font-size: 1.2em; } }
 
 /*# sourceMappingURL=style.css.map */
