@@ -174,10 +174,11 @@ a:hover {
 }
 
 .wrapper {
+	padding: 0 5%;
  	margin: 0 auto;
  	color: black;
- 	max-width: 960px;
- 	overflow: hidden;
+ 	max-width: 460px;
+ 	// overflow: hidden;
 
 	// .col-lf-wrapper {
 	// 	// width: 350px;
@@ -330,18 +331,19 @@ a:hover {
 /*=============key chart===========*/
 
 	.col-rt-wrapper {
-		width: 30%;
+		// width: 30%;
   		margin: 0;
-  		float: right;
-  		background-color: red;
-  		max-height: 430px;
+  		// float: right;
+  		// background-color: red;
+  		// max-height: 430px;
+  		overflow: hidden;
 	}
 
 	.key {
 		padding: 0.9em 1em;
 		border: 2px solid black;
-		max-width: 300px;
-		float: right;
+		// max-width: 300px;
+		// float: right;
 	}
 
 	.key-list {
@@ -376,6 +378,8 @@ a:hover {
 		line-height: 20px;
 		vertical-align: top;
 		width: 100%;
+		// border-bottom: 1px solid #000000;
+		// padding-bottom: 0.5em;
 	}
 
 	.key-header {
@@ -386,6 +390,43 @@ a:hover {
 	.key-text {
 		color: #616161;	
 		font-size: 1em;	
+	}
+
+	.project-number {
+		margin: 0.3em 0;
+		height: 20px;
+	}
+
+	.bubble {
+		width: 1em;
+		height: 1em;
+		border-radius: 100%;
+		margin: 0 0.1em;
+		border: 1px solid #000000;		
+	}
+
+	.fill-bubble {
+		background-color: #000000;
+		float: left;
+		width: 0.7em;
+		height: 0.7em;
+		border-radius: 100%;
+		margin: 0.3em 0.3em;
+		border: 1px solid #000000;
+	}
+
+	#fill-bubble {
+		background-color: #000000;
+		float: right;
+	}
+
+	#unfill-bubble {
+		float: right;
+	}
+
+	.key-line {
+		height: 1px;
+		background-color: #000000;
 	}
 }
 
@@ -413,6 +454,10 @@ a:hover {
 	margin: 0 0.5em;	
 }
 
+.col-top {
+	display: none;
+}
+
 @import 'portfolio';
 @import 'contact';
 
@@ -429,7 +474,10 @@ a:hover {
 	// }
 
 	.wrapper {
-		padding: 0 1em;
+	 	margin: 0 auto;
+	 	color: black;
+	 	max-width: 960px;
+	 	overflow: hidden;
 
 	// 	.col-lf-wrapper {
 	// 		float: left;
@@ -461,7 +509,8 @@ a:hover {
  	.col-top {
 		max-height: 430px;
 		float: left;
-		background-color: blue;
+		display: inline;
+		// background-color: blue;
 		width: 70%;
 	}
 
@@ -692,7 +741,7 @@ a:hover {
 		width: 30%;
   		margin: 0;
   		float: right;
-  		background-color: red;
+  		// background-color: red;
   		max-height: 430px;
 	}
 
@@ -731,10 +780,7 @@ a:hover {
 	}
 
 	.key-details {
-		display: inline-block;
-		line-height: 20px;
-		vertical-align: top;
-		width: 100%;
+
 	}
 
 	.key-header {
@@ -742,9 +788,18 @@ a:hover {
 		font-size: 15px;
 		display: inline-block;
 	}
+
 	.key-text {
 		color: #616161;	
 		font-size: 1em;	
+	}
+
+	.project-number {
+		display: none;
+	}
+
+	.key-line {
+		display: none;
 	}
 
 }
