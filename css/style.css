@@ -1,3 +1,4 @@
+/*Mixins*/
 /*Variables*/
 body {
   background-color: #FEFFE6; }
@@ -146,11 +147,44 @@ a:hover {
     background-color: #E8430C; }
   .wrapper .purple {
     background-color: #BB2E46; }
-  .wrapper .key-details {
+  .wrapper .dropdown {
     display: inline-block;
     line-height: 20px;
     vertical-align: top;
     width: 100%; }
+    .wrapper .dropdown a {
+      text-decoration: none; }
+    .wrapper .dropdown .ion-arrow-down-b {
+      position: absolute;
+      display: block;
+      font-size: 18px;
+      color: #000000;
+      display: inline-block; }
+      .wrapper .dropdown .ion-arrow-down-b.open {
+        transform: rotate(-180deg);
+        transition-duration: .6s; }
+      .wrapper .dropdown .ion-arrow-down-b.close {
+        transform: rotate(0deg);
+        transition-duration: .6s; }
+    .wrapper .dropdown .show, .wrapper .dropdown .hide {
+      transform-origin: 50%, 0%; }
+    .wrapper .dropdown .show {
+      display: block;
+      max-height: 400px;
+      transform: scaleY(1);
+      animation: showAnimation 0.5s ease-in-out;
+      -moz-animation: showAnimation 0.5s ease-in-out;
+      -webkit-animation: showAnimation 0.5s ease-in-out;
+      transition: max-height 1s ease-in-out; }
+    .wrapper .dropdown .hide {
+      max-height: 0;
+      transform: scaleY(0);
+      animation: hideAnimation 0.4s ease-out;
+      -moz-animation: hideAnimation 0.4s ease-out;
+      -webkit-animation: hideAnimation 0.4s ease-out;
+      transition: max-height .6s ease-out; }
+    .wrapper .dropdown .dropdown-menu {
+      overflow: hidden; }
   .wrapper .key-header {
     text-transform: uppercase;
     font-size: 15px;

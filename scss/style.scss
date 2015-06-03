@@ -1,3 +1,11 @@
+/*Mixins*/
+
+@mixin animation($content) {
+  animation: $content;
+  -moz-animation: $content;
+  -webkit-animation: $content;
+}
+
 /*Variables*/
 
 $head: 'Italiana', serif;
@@ -222,11 +230,60 @@ a:hover {
 		background-color: #BB2E46;		
 	}
 
-	.key-details {
+	.dropdown {
 		display: inline-block;
 		line-height: 20px;
 		vertical-align: top;
 		width: 100%;
+
+		a {
+			text-decoration: none;
+		}
+
+		[data-toggle="dropdown"] {
+
+		}
+
+		.ion-arrow-down-b {
+			position: absolute;
+			display: block;
+			font-size: 18px;
+			color: #000000;
+			display: inline-block;
+
+			&.open {
+				transform: rotate(-180deg);
+				transition-duration: .6s;
+			}
+			&.close {
+				transform: rotate(0deg);
+				transition-duration: .6s;
+			}
+			
+		}
+
+		.show, .hide {
+			transform-origin: 50%, 0%;
+		}
+		.show {
+			display: block;
+			max-height: 400px;
+			transform: scaleY(1);
+			@include animation(showAnimation .5s ease-in-out);
+			transition: max-height 1s ease-in-out;
+		}
+		.hide {
+			max-height: 0;
+			transform: scaleY(0);
+			@include animation(hideAnimation .4s ease-out);
+			transition: max-height .6s ease-out;
+		}
+
+		.dropdown-menu {
+			overflow: hidden;
+			// max-height: 0;
+			// display: none;
+		}
 	}
 
 	.key-header {
