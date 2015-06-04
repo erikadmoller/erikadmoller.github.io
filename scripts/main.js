@@ -15,19 +15,23 @@ $(document).ready(function() {
 });
 
 // Dropdown Menu
-var dropdown = document.querySelectorAll('.dropdown');
-var dropdownArray = Array.prototype.slice.call(dropdown,0);
-dropdownArray.forEach(function(el){
-	var button = el.querySelector('a[data-toggle="dropdown"]'),
+var wrapper = document.querySelectorAll('.wrapper');
+var wrapperArray = Array.prototype.slice.call(wrapper,0);
+wrapperArray.forEach(function(el){
+	var button = el.querySelector('a[data-toggle="wrapper"]'),
 			menu = el.querySelector('.dropdown-menu'),
+			circles = el.querySelector('.circle-child'),
 			arrow = button.querySelector('.ion-arrow-down-b');
 
 			menu.classList.add('hide');
+			circles.classList.add('transparent');
 
 	button.onclick = function(event) {
 		if(!menu.hasClass('show')) {
 			menu.classList.add('show');
 			menu.classList.remove('hide');
+			circles.classList.add('opaque');
+			circles.classList.remove('transparent');
 			arrow.classList.add('open');
 			arrow.classList.remove('close');
 			event.preventDefault();
@@ -35,6 +39,8 @@ dropdownArray.forEach(function(el){
 		else {
 			menu.classList.remove('show');
 			menu.classList.add('hide');
+			circles.classList.remove('opaque');
+			circles.classList.add('transparent');
 			arrow.classList.remove('open');
 			arrow.classList.add('close');
 			event.preventDefault();
