@@ -193,6 +193,14 @@ a:hover {
     position: relative;
     width: 90%;
     margin: 0 auto; }
+  .wrapper .dropdown .orange-parent {
+    max-height: 0; }
+  .wrapper .dropdown .yellow-parent {
+    max-height: 0; }
+  .wrapper .dropdown .opaque {
+    opacity: 1; }
+  .wrapper .dropdown .transparent {
+    opacity: 0.2; }
 @keyframes showAnimation {
   0% {
     transform: scaleY(0.1); }
@@ -519,15 +527,6 @@ img {
       float: left;
       border-left: 1px solid black;
       border-bottom: 1px solid black; }
-    .wrapper .circle-child {
-      font-size: 1em;
-      line-height: 13px;
-      text-align: center;
-      border-radius: 100%;
-      display: inline-flex;
-      padding: 1em;
-      position: relative;
-      opacity: 0.2; }
     .wrapper .purple-child-1 {
       background-color: #BB2E46;
       width: 4em;
@@ -583,9 +582,9 @@ img {
       background-color: #F4C200;
       width: 4em;
       height: 4em;
-      top: -125px;
-      left: -100px;
-      margin-left: 20%; }
+      position: absolute;
+      top: 32em;
+      left: 7em; }
     .wrapper #yellow-child-1 {
       font-size: 1em;
       margin-top: 0.3em; }
@@ -593,13 +592,23 @@ img {
       background-color: #F4C200;
       width: 4.2em;
       height: 4.2em;
-      top: -140px;
-      margin-left: 10%; }
+      position: absolute;
+      top: 32em;
+      left: 13em; }
+    .wrapper .circle-child {
+      font-size: 1em;
+      line-height: 13px;
+      text-align: center;
+      border-radius: 100%;
+      display: inline-flex;
+      padding: 1em; }
     .wrapper .orange-child-1 {
       background-color: #FF7A00;
       width: 3em;
       height: 3em;
-      top: -280px; }
+      top: 31em;
+      position: absolute;
+      left: 20em; }
     .wrapper #orange-child-1 {
       font-size: 1em;
       margin-top: 0.3em; }
@@ -607,8 +616,10 @@ img {
       background-color: #FF7A00;
       width: 5em;
       height: 5em;
-      top: -250px;
-      margin-left: 50%; }
+      top: 31em;
+      /* margin-left: 50%; */
+      position: absolute;
+      left: 25em; }
     .wrapper #orange-child-2 {
       font-size: 1em;
       margin-top: 0.5em; }

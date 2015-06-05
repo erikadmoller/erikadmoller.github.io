@@ -338,6 +338,25 @@ a:hover {
 			margin: 0 auto;
 		}
 
+		.orange-parent {
+			max-height: 0;
+			// transition: opacity .6s ease;
+ 		}
+
+ 		.yellow-parent {
+			max-height: 0;
+		}
+
+		.opaque {
+			opacity: 1;
+			// transition: opacity 1s ease-in-out;
+			// transition-duration: 0s;
+		}
+		.transparent {
+			opacity: 0.2;
+			// transition: opacity .6s ease-out;
+			// transition-duration: 0s;
+		}
 
 		@include keyframes(showAnimation) {
 			0% {
@@ -552,26 +571,6 @@ a:hover {
 			border-bottom: 1px solid black;
 		}
 
-
-		.circle-child {
-			font-size: 1em;
-			line-height: 13px;
-			text-align: center;
-			border-radius: 100%;
-			display: inline-flex;
-			padding: 1em;
-			position: relative;
-			opacity: 0.2;
-
-			// .opaque {
-			// 	opacity: 1;
-			// }
-			// .transparent {
-			// 	opacity: 0.2;
-			// }
-
-		}
-
 		// .purple-parent {
 		// 	opacity: 0.2;
 		// }
@@ -655,17 +654,13 @@ a:hover {
 			margin-top: 0.3em;
 		}
 
-		// .yellow-parent {
-		// 	opacity: 0.2;
-		// }
-
 		.yellow-child-1 {
 			background-color: #F4C200;
 			width: 4em;
 			height: 4em;
-			top: -125px;
-			left: -100px;
-			margin-left: 20%;
+			position: absolute;
+			top: 32em;
+			left: 7em;
 		}
 
 		#yellow-child-1 {
@@ -677,20 +672,29 @@ a:hover {
 			background-color: #F4C200;
 			width: 4.2em;
 			height: 4.2em;
-			top: -140px;
-			margin-left: 10%;
-
+			position: absolute;
+			top: 32em;
+			left: 13em;
 		}
 
-		// .orange-parent {
-		// 	opacity: 0.2;
-		// }
+		.circle-child {
+			font-size: 1em;
+			line-height: 13px;
+			text-align: center;
+			border-radius: 100%;
+			display: inline-flex;
+			padding: 1em;
+			// position: relative;
+			// opacity: 0.2;
+		}
 
 		.orange-child-1 {
 			background-color: #FF7A00;
 			width: 3em;
 			height: 3em;	
-			top: -280px;
+			top: 31em;
+			position: absolute;
+			left: 20em;
 		}
 
 		#orange-child-1 {
@@ -702,8 +706,10 @@ a:hover {
 			background-color: #FF7A00;
 			width: 5em;
 			height: 5em;
-			top: -250px;
-			margin-left: 50%;		
+			top: 31em;
+			/* margin-left: 50%; */
+			position: absolute;
+			left: 25em;	
 		}
 
 		#orange-child-2 {
