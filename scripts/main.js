@@ -22,8 +22,10 @@ dropdownArray.forEach(function(el){
 			menu = el.querySelector('.dropdown-menu'),
 			arrow = button.querySelector('.ion-arrow-down-b'),
 			orange = el.querySelector('.orange-parent'),
-			pink = el.querySelector('prink-parent'),
-			purple = el.querySelector('purple-parent');
+			pink = el.querySelector('.pink-parent'),
+			purple = el.querySelector('.purple-parent'),
+			yellow = el.querySelector('.yellow-parent'),
+			red = el.querySelector('.red-parent');
 
 
 	button.onclick = function(event) {
@@ -72,6 +74,26 @@ dropdownArray.forEach(function(el){
 			else {
 				purple.classList.remove('opaque');
 				purple.classList.add('transparent');			
+			}
+		}
+		else if(yellow) {
+			if(!yellow.hasClass('opaque')) {
+				yellow.classList.add('opaque');
+				yellow.classList.remove('transparent');
+			}
+			else {
+				yellow.classList.remove('opaque');
+				yellow.classList.add('transparent');			
+			}
+		}
+		else if(red) {
+			if(!red.hasClass('opaque')) {
+				red.classList.add('opaque');
+				red.classList.remove('transparent');
+			}
+			else {
+				red.classList.remove('opaque');
+				red.classList.add('transparent');			
 			}
 		}
 
