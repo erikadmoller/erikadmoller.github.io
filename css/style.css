@@ -148,17 +148,22 @@ a:hover {
     background-color: #FF7A00; }
   .wrapper .yellow {
     background-color: #F4C200; }
-  .wrapper .magenta {
-    background-color: #FF9359; }
   .wrapper .pink {
+    background-color: #FF9359; }
+  .wrapper .red {
     background-color: #E8430C; }
   .wrapper .purple {
     background-color: #BB2E46; }
+  .wrapper #legend-top {
+    width: 216px;
+    height: 1px;
+    background-color: #f7f99c; }
   .wrapper .top-menu-wrapper {
     height: 20px;
-    padding: 10px 8px; }
-  .wrapper .orange-active:hover {
-    background: #fffda8; }
+    padding: 10px 8px;
+    width: 200px; }
+    .wrapper .top-menu-wrapper:hover {
+      background: #fffda8; }
   .wrapper .project-number {
     margin: 0.3em 0;
     height: 20px; }
@@ -354,24 +359,27 @@ img {
     max-width: 750px;
     padding: 0; }
     .wrapper ul {
-      no-repeat: right top;
-      border: 1px solid #444;
       display: inline-block;
-      height: 501px;
+      height: 400px;
       position: relative;
       width: 750px;
       padding: 0; }
     .wrapper a {
-      border-right: 1px solid #444;
-      border-top: 1px solid #444;
       color: black;
       display: block;
       text-align: center;
       text-decoration: none;
-      width: 200px; }
+      width: 200px;
+      line-height: 20px; }
+    .wrapper .key-header {
+      text-transform: uppercase;
+      font-size: 15px;
+      float: left; }
     .wrapper .key-text {
       color: #616161;
-      font-size: 1em; }
+      font-size: 1em;
+      padding-bottom: 5px;
+      padding: 10px 8px; }
     .wrapper li:first-child a {
       border-top: none;
       color: red; }
@@ -410,22 +418,24 @@ img {
       display: inline-flex;
       padding: 1em; }
     .wrapper .orange-parent, .wrapper .pink-parent, .wrapper .purple-parent, .wrapper .yellow-parent, .wrapper .red-parent {
-      height: 501px;
+      height: 380px;
       position: absolute;
       right: 0;
       top: 0;
-      width: 525px; }
+      width: 499px; }
       .wrapper .orange-parent.opaque, .wrapper .pink-parent.opaque, .wrapper .purple-parent.opaque, .wrapper .yellow-parent.opaque, .wrapper .red-parent.opaque {
-        opacity: 1; }
+        opacity: 1;
+        transition: opacity 1s ease-in-out; }
       .wrapper .orange-parent.transparent, .wrapper .pink-parent.transparent, .wrapper .purple-parent.transparent, .wrapper .yellow-parent.transparent, .wrapper .red-parent.transparent {
-        opacity: 0.2; }
+        opacity: 0.2;
+        transition: opacity .6s ease-out; }
     .wrapper .orange-child-1 {
       background-color: #FF7A00;
       width: 3em;
       height: 3em;
-      top: 10em;
-      position: relative;
-      margin-left: 10%; }
+      top: 0;
+      left: 120px;
+      position: relative; }
     .wrapper #orange-child-1 {
       font-size: 1em;
       margin-top: 0.3em; }
@@ -433,6 +443,8 @@ img {
       background-color: #FF7A00;
       width: 5em;
       height: 5em;
+      top: 0;
+      left: 110px;
       position: relative; }
     .wrapper #orange-child-2 {
       font-size: 1em;
@@ -441,38 +453,51 @@ img {
       background-color: #FF9359;
       width: 3em;
       height: 3em;
+      left: 340px;
+      top: 30px;
       position: relative; }
     .wrapper .pink-child-2 {
       background-color: #FF9359;
       width: 4em;
       height: 4em;
+      top: 150px;
+      left: 170px;
       position: relative; }
     .wrapper .pink-child-3 {
       background-color: #FF9359;
       width: 4.5em;
       height: 4.5em;
-      top: 0px;
+      top: 250px;
+      left: 0;
       position: relative; }
     .wrapper .pink-child-4 {
       background-color: #FF9359;
       width: 5em;
       height: 5em;
+      top: 270px;
+      left: 60px;
       position: relative; }
     .wrapper .purple-child-1 {
       background-color: #BB2E46;
       width: 4em;
       height: 4em;
+      top: 290px;
+      left: 180px;
       position: relative; }
     .wrapper .purple-child-2 {
       background-color: #BB2E46;
       width: 3.5em;
       height: 3.5em;
+      top: 290px;
+      left: 100px;
       position: relative; }
     .wrapper .yellow-child-1 {
       background-color: #F4C200;
       width: 4em;
       height: 4em;
-      position: relative; }
+      position: relative;
+      top: 80px;
+      left: 0; }
     .wrapper #yellow-child-1 {
       font-size: 1em;
       margin-top: 0.3em; }
@@ -485,8 +510,9 @@ img {
       background-color: #E8430C;
       width: 4em;
       height: 4em;
-      top: -130px;
-      margin-left: 15%; }
+      top: 170px;
+      left: 100px;
+      position: relative; }
     .wrapper #red-child-1 {
       font-size: 1em;
       margin-top: 0.5em; }
@@ -494,36 +520,48 @@ img {
       background-color: #E8430C;
       width: 4.5em;
       height: 4.5em;
-      top: -220px;
-      margin-left: 10%;
-      left: -140px; }
+      top: 200px;
+      left: -90px;
+      position: relative; }
     .wrapper #red-child-2 {
       font-size: 1em;
       margin-top: 0.3em; }
-    .wrapper .dropdown a {
-      text-decoration: none; }
-    .wrapper .dropdown .ion-arrow-down-b {
-      font-size: 15px;
-      color: #000000;
-      float: right; }
-      .wrapper .dropdown .ion-arrow-down-b.open {
-        transform: rotate(-180deg);
-        transition-duration: .6s; }
-      .wrapper .dropdown .ion-arrow-down-b.close {
-        transform: rotate(0deg);
-        transition-duration: .6s; }
-      .wrapper .dropdown .ion-arrow-down-b:before {
-        content: '\25BC'; }
-    .wrapper .dropdown .show, .wrapper .dropdown .hide {
-      transform-origin: 50%, 0%; }
-    .wrapper .dropdown .show {
-      max-height: 400px; }
-    .wrapper .dropdown .hide {
-      max-height: 0; }
-    .wrapper .dropdown .dropdown-menu {
-      overflow: hidden;
-      position: relative;
-      width: 200px; }
+    .wrapper .dropdown {
+      box-shadow: 0 2px 0 #fffffc inset, 0 -1px 0 #f7f99c inset;
+      width: 216px;
+      border-left: 1px solid #f7f99c;
+      border-right: 1px solid #f7f99c; }
+      .wrapper .dropdown a {
+        text-decoration: none; }
+      .wrapper .dropdown .ion-arrow-down-b {
+        font-size: 15px;
+        color: #000000;
+        float: right; }
+        .wrapper .dropdown .ion-arrow-down-b.open {
+          transform: rotate(-180deg);
+          transition-duration: .6s; }
+        .wrapper .dropdown .ion-arrow-down-b.close {
+          transform: rotate(0deg);
+          transition-duration: .6s; }
+        .wrapper .dropdown .ion-arrow-down-b:before {
+          content: '\25BC'; }
+      .wrapper .dropdown .show, .wrapper .dropdown .hide {
+        transform-origin: 50%, 0%; }
+      .wrapper .dropdown .show {
+        max-height: 400px;
+        animation: showAnimation 0.5s ease-in-out;
+        -moz-animation: showAnimation 0.5s ease-in-out;
+        -webkit-animation: showAnimation 0.5s ease-in-out;
+        transition: max-height 1s ease-in-out; }
+      .wrapper .dropdown .hide {
+        max-height: 0;
+        animation: hideAnimation 0.4s ease-out;
+        -moz-animation: hideAnimation 0.4s ease-out;
+        -webkit-animation: hideAnimation 0.4s ease-out;
+        transition: max-height .6s ease-out; }
+      .wrapper .dropdown .dropdown-menu {
+        overflow: hidden;
+        width: 200px; }
   @keyframes showAnimation {
     0% {
       transform: scaleY(0.1); }
@@ -602,28 +640,28 @@ img {
     height: 501px;
     width: 25px;
     position: absolute;
-    left: 200px;
-    top: 0; }
+    left: 216px;
+    top: 0;
+    padding-left: 10px; }
 
   #parent {
     margin: 0 auto;
-    width: 115px;
-    height: 115px;
+    width: 70px;
+    height: 70px;
     overflow: hidden;
     display: table; }
 
   #parent-1 {
     width: 25px;
-    height: 170px;
     overflow: hidden; }
 
   #y-arrow {
     background-color: black;
     display: table-cell;
     width: 1px;
-    height: 150px;
+    height: 220px;
     position: relative;
-    left: 15px;
+    left: 12px;
     top: -6px;
     margin-top: 0.5em; }
 
@@ -642,7 +680,7 @@ img {
     color: black;
     display: inline-block;
     position: relative;
-    left: 9px; }
+    left: 6px; }
 
   /*========graph==========*/
   /*=======x-axis=======*/
@@ -712,15 +750,6 @@ img {
 
   .purple {
     background-color: #BB2E46; }
-
-  .key-header {
-    text-transform: uppercase;
-    font-size: 15px;
-    display: inline-block; }
-
-  .key-text {
-    color: #616161;
-    font-size: 1em; }
 
   .project-number {
     display: none; }

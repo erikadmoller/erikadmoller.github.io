@@ -250,30 +250,28 @@ a:hover {
 	.yellow {
 		background-color: #F4C200;
 	}
-	.magenta {
+	.pink {
 		background-color: #FF9359;
 	}
-	.pink {
+	.red {
 		background-color: #E8430C;
 	}
 	.purple {
 		background-color: #BB2E46;		
 	}
 
-	.top-menu-wrapper {
-		height: 20px;
-		padding: 10px 8px;
+	#legend-top {
+		width: 216px;
+		height: 1px;
+		background-color: #f7f99c;
 	}
 
-	.orange-active {
+	.top-menu-wrapper {
+		height: 20px;
 		@include hover-style($hover);
-
-		.color {
-
-		}
-		.colorless {
-
-		}
+		padding: 10px 8px;
+		// @include double-shadow($yellow);
+		width: 200px;
 	}
 
 	// .dropdown {
@@ -282,11 +280,11 @@ a:hover {
 	// 		text-decoration: none;
 	// 	}
 
-	// 	// .top-menu-wrapper {
-	// 	// 	height: 20px;
-	// 	// 	padding: 10px 8px;
-	// 	// 	@include hover-style($hover);
-	// 	// }
+		// .top-menu-wrapper {
+		// 	height: 20px;
+		// 	padding: 10px 8px;
+		// 	@include hover-style($hover);
+		// }
 
 	// 	// [data-toggle="dropdown"] {
 	// 	// 	position: relative;
@@ -490,35 +488,41 @@ a:hover {
  	padding: 0;
 
 	ul {
-		no-repeat: right top;
-	    border: 1px solid #444;
+		// no-repeat: right top;
+	    // border: 1px solid #444;
 	    display: inline-block;
-	    height: 501px;
+	    height: 400px;
 	    position: relative;
 	    width: 750px;
 	    padding: 0;
 	}
 
 	a {
-	    border-right: 1px solid #444;
-	    border-top: 1px solid #444;
+	    // border-right: 1px solid #444;
+	    // border-top: 1px solid #444;
 	    color: black;
 	    display: block;
 	    text-align: center;
 	    text-decoration: none;
 		width: 200px;
+		// @include double-shadow($yellow);
+		// display: inline-block;
+		line-height: 20px;
+		// vertical-align: top;
+		// width: 100%;
 	}
 
-	// .key-header {
-	// 	text-transform: uppercase;
-	// 	font-size: 15px;
-	// 	float: left;
-	// }
+	.key-header {
+		text-transform: uppercase;
+		font-size: 15px;
+		float: left;
+	}
+
 	.key-text {
 		color: #616161;	
 		font-size: 1em;	
-		// padding-bottom: 5px;
-	    // padding: 10px 8px;
+		padding-bottom: 5px;
+	    padding: 10px 8px;
 	    // background-color: red;
 	}
 
@@ -589,21 +593,19 @@ a:hover {
 
 	.orange-parent, .pink-parent, .purple-parent, .yellow-parent, .red-parent {
 		// display: none;
-	    height: 501px;
+	    height: 380px;
 	    position: absolute;
 	    right: 0;
 	    top: 0;
-	    width: 525px;
+	    width: 499px;
 
 		&.opaque {
 			opacity: 1;
-			// transition: opacity 1s ease-in-out;
-			// transition-duration: 0s;
+			transition: opacity 1s ease-in-out;
 		}
 		&.transparent {
 			opacity: 0.2;
-			// transition: opacity .6s ease-out;
-			// transition-duration: 0s;
+			transition: opacity .6s ease-out;
 		}
 	}
 
@@ -611,9 +613,9 @@ a:hover {
 		background-color: #FF7A00;
 		width: 3em;
 		height: 3em;	
-		top: 10em;
+		top: 0;
+		left: 120px;
 		position: relative;
-		margin-left: 10%;
 	}
 
 	#orange-child-1 {
@@ -625,11 +627,9 @@ a:hover {
 		background-color: #FF7A00;
 		width: 5em;
 		height: 5em;
-		position: relative;
-		// top: 31em;
-		// margin-left: 50%;
-		// position: absolute;
-		// left: 25em;	
+		top: 0;
+		left: 110px;
+		position: relative;	
 	}
 
 	#orange-child-2 {
@@ -641,8 +641,8 @@ a:hover {
 		background-color: #FF9359;
 		width: 3em;
 		height: 3em;
-		// top: 140px;
-		// margin-left: 32%;
+	  	left: 340px;
+  		top: 30px;
 		position: relative;		
 	}
 
@@ -650,7 +650,8 @@ a:hover {
 		background-color: #FF9359;
 		width: 4em;
 		height: 4em;
-		// left: -60px;
+		top: 150px;
+  		left: 170px;
 		position: relative;	
 	}
 
@@ -658,7 +659,8 @@ a:hover {
 		background-color: #FF9359;
 		width: 4.5em;
 		height: 4.5em;
-		top: 0px;	
+	  	top: 250px;
+  		left: 0;
 		position: relative;		
 	}
 
@@ -666,8 +668,8 @@ a:hover {
 		background-color: #FF9359;
 		width: 5em;
 		height: 5em;
-		// top: -30px;
-		// margin-left: 45%;
+		top: 270px;
+  		left: 60px;
 		position: relative;	
 	}
 
@@ -675,7 +677,8 @@ a:hover {
 		background-color: #BB2E46;
 		width: 4em;
 		height: 4em;
-		// margin-left: 15%;	
+	  	top: 290px;
+  		left: 180px;	
 		position: relative;	
 	}
 
@@ -683,7 +686,8 @@ a:hover {
 		background-color: #BB2E46;
 		width: 3.5em;
 		height: 3.5em;
-		// margin-left: 30%;
+		top: 290px;
+  		left: 100px;
 		position: relative;	
 	}
 
@@ -693,8 +697,8 @@ a:hover {
 		width: 4em;
 		height: 4em;
 		position: relative;
-		// top: 32em;
-		// left: 7em;
+	  	top: 80px;
+  		left: 0;
 	}
 
 	#yellow-child-1 {
@@ -715,8 +719,9 @@ a:hover {
 		background-color: #E8430C;
 		width: 4em;
 		height: 4em;
-		top: -130px;
-		margin-left: 15%;	
+		top: 170px;
+		left: 100px;
+		position: relative;	
 	}
 
 	#red-child-1 {
@@ -728,9 +733,9 @@ a:hover {
 		background-color: #E8430C;
 		width: 4.5em;
 		height: 4.5em;
-		top: -220px;
-		margin-left: 10%;
-		left: -140px;
+		top: 200px;
+  		left: -90px;
+		position: relative;
 	}
 
 	#red-child-2 {
@@ -740,6 +745,11 @@ a:hover {
 
 
 	.dropdown {
+
+		@include double-shadow($yellow);
+		width: 216px;
+		border-left: 1px solid #f7f99c;
+		border-right: 1px solid #f7f99c;
 
 		a {
 			text-decoration: none;
@@ -770,18 +780,18 @@ a:hover {
 		.show {
 			// display: block;
 			max-height: 400px;
-			// @include animation(showAnimation .5s ease-in-out);
-			// transition: max-height 1s ease-in-out;
+			@include animation(showAnimation .5s ease-in-out);
+			transition: max-height 1s ease-in-out;
 		}
 		.hide {
 			max-height: 0;
-			// @include animation(hideAnimation .4s ease-out);
-			// transition: max-height .6s ease-out;
+			@include animation(hideAnimation .4s ease-out);
+			transition: max-height .6s ease-out;
 		}
 
 		.dropdown-menu {
 			overflow: hidden;
-			position: relative;
+			// position: relative;
 			// width: 90%;
 			// margin: 0 auto;
 			width: 200px;
@@ -844,24 +854,25 @@ a:hover {
  /*=========y-axis==========*/
 
 		.vert-axis {
-			height: 501px;
+		  	height: 501px;
 			width: 25px;
 			position: absolute;
-			left: 200px;
+			left: 216px;
 			top: 0;
+			padding-left: 10px;
 		}
 
 		#parent {
 		  margin: 0 auto;
-		  width: 115px;
-		  height: 115px;
+		  width: 70px;
+		  height: 70px;
 		  overflow: hidden;
 		  display: table;
 		}
 
 		#parent-1 {
 		  width: 25px;
-		  height: 170px;
+		  // height: 170px;
 		  overflow: hidden;
 		}
 
@@ -869,9 +880,9 @@ a:hover {
 		  background-color: black;
 		  display: table-cell;
 		  width: 1px;
-		  height: 150px;
+		  height: 220px;
 		  position: relative;
-		  left: 15px;
+		  left: 12px;
 		  top: -6px;
 		  margin-top: 0.5em;
 		}
@@ -892,7 +903,7 @@ a:hover {
 			color: black;
 			display: inline-block;
 			position: relative;
-			left: 9px;
+			left: 6px;
 		}
 
 /*========graph==========*/
@@ -998,20 +1009,20 @@ a:hover {
 		background-color: #BB2E46;		
 	}
 
-	.key-details {
+	// .key-details {
 
-	}
+	// }
 
-	.key-header {
-		text-transform: uppercase;
-		font-size: 15px;
-		display: inline-block;
-	}
+	// .key-header {
+	// 	text-transform: uppercase;
+	// 	font-size: 15px;
+	// 	float: left;
+	// }
 
-	.key-text {
-		color: #616161;	
-		font-size: 1em;	
-	}
+	// .key-text {
+	// 	color: #616161;	
+	// 	font-size: 1em;	
+	// }
 
 	.project-number {
 		display: none;
