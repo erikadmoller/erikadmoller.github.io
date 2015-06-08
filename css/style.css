@@ -651,7 +651,7 @@ img {
     overflow: hidden; }
 
   #y-arrow {
-    background-color: black;
+    background-color: #000000;
     width: 1px;
     height: 220px;
     position: relative;
