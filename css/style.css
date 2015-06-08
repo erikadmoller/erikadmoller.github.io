@@ -89,7 +89,7 @@ p {
 
 /*==============main content==============*/
 .space-header {
-  margin-top: 8em; }
+  margin-top: 5em; }
 
 .main-title {
   font-family: "Arapey", serif;
@@ -273,7 +273,7 @@ a:hover {
 .footer-wrapper {
   background-color: #000000;
   clear: both;
-  margin: 120px 0 0 0; }
+  margin: 80px 0 0 0; }
 
 .footer {
   padding: 4em 0;
@@ -632,7 +632,7 @@ img {
 
   /*=========y-axis==========*/
   .vert-axis {
-    height: 501px;
+    height: 380px;
     width: 25px;
     position: absolute;
     left: 216px;
