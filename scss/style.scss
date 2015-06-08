@@ -188,7 +188,7 @@ a:hover {
 	transition-property: color;
 	transition-duration: 0.5s;
 	transition-delay: 0s;
-	color: $hover;
+	color: #EDCB52;
 	cursor: pointer;
 	text-decoration: none;
 }
@@ -536,6 +536,20 @@ a:hover {
 	#orange-child-2 {
 		font-size: 1em;
 		margin-top: 0.5em;		
+	}
+
+	.orange-child-3 {
+		background-color: #FF7A00;
+		width: 3em;
+		height: 3em;
+		top: 60px;
+		left: 0;
+		position: relative;			
+	}
+
+	#orange-child-3 {
+		font-size: 1em;
+		margin-top: 0em;		
 	}
 
 	.pink-child-1 {
