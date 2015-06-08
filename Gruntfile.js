@@ -16,7 +16,9 @@ module.exports = function(grunt){
 		 			// souremap: 'none',
 		 		},
 		 		files: {
-		 			'compiled/style.css': 'scss/style.scss'
+		 			'compiled/style.css': 'scss/style.scss',
+		 			'compiled/_portfolio.css': 'scss/_portfolio.scss',
+		 			'compiled/_contact.css': 'scss/_contact.scss'
 		 		}
 		 	},
 		 	 dist: {
@@ -25,7 +27,9 @@ module.exports = function(grunt){
 		 			// souremap: 'none',
 		 		},
 		 		files: {
-		 			'compiled/style-min.css': 'scss/style.scss'
+		 			'compiled/style-min.css': 'scss/style.scss',
+		 			'compiled/_portfolio-min.css': 'scss/_portfolio.scss',
+		 			'compiled/_contact-min.css': 'scss/_contact.scss'
 		 		}
 		 	}
 		 },
