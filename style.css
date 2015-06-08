@@ -215,18 +215,21 @@ a:hover {
   float: right;
 }
 .wrapper .dropdown .ion-arrow-down-b.open {
-  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
   transition-duration: .6s;
 }
 .wrapper .dropdown .ion-arrow-down-b.close {
-  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
   transition-duration: .6s;
 }
 .wrapper .dropdown .ion-arrow-down-b:before {
   content: '\25BC';
 }
 .wrapper .dropdown .show, .wrapper .dropdown .hide {
-  transform-origin: 50%, 0%;
+  -webkit-transform-origin: 50%, 0%;
+          transform-origin: 50%, 0%;
 }
 .wrapper .dropdown .show {
   max-height: 400px;
@@ -247,113 +250,98 @@ a:hover {
 }
 @keyframes showAnimation {
   0% {
-    transform: scaleY(0.1);
+    -webkit-transform: scaleY(0.1);
+            transform: scaleY(0.1);
   }
   40% {
-    transform: scaleY(1.04);
+    -webkit-transform: scaleY(1.04);
+            transform: scaleY(1.04);
   }
   60% {
-    transform: scaleY(0.98);
+    -webkit-transform: scaleY(0.98);
+            transform: scaleY(0.98);
   }
   80% {
-    transform: scaleY(1.04);
+    -webkit-transform: scaleY(1.04);
+            transform: scaleY(1.04);
   }
   100% {
-    transform: scaleY(0.98);
+    -webkit-transform: scaleY(0.98);
+            transform: scaleY(0.98);
   }
   80% {
-    transform: scaleY(1.02);
+    -webkit-transform: scaleY(1.02);
+            transform: scaleY(1.02);
   }
   100% {
-    transform: scaleY(1);
-  }
-}
-@-moz-keyframes showAnimation {
-  0% {
-    transform: scaleY(0.1);
-  }
-  40% {
-    transform: scaleY(1.04);
-  }
-  60% {
-    transform: scaleY(0.98);
-  }
-  80% {
-    transform: scaleY(1.04);
-  }
-  100% {
-    transform: scaleY(0.98);
-  }
-  80% {
-    transform: scaleY(1.02);
-  }
-  100% {
-    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
   }
 }
 @-webkit-keyframes showAnimation {
   0% {
-    transform: scaleY(0.1);
+    -webkit-transform: scaleY(0.1);
+            transform: scaleY(0.1);
   }
   40% {
-    transform: scaleY(1.04);
+    -webkit-transform: scaleY(1.04);
+            transform: scaleY(1.04);
   }
   60% {
-    transform: scaleY(0.98);
+    -webkit-transform: scaleY(0.98);
+            transform: scaleY(0.98);
   }
   80% {
-    transform: scaleY(1.04);
+    -webkit-transform: scaleY(1.04);
+            transform: scaleY(1.04);
   }
   100% {
-    transform: scaleY(0.98);
+    -webkit-transform: scaleY(0.98);
+            transform: scaleY(0.98);
   }
   80% {
-    transform: scaleY(1.02);
+    -webkit-transform: scaleY(1.02);
+            transform: scaleY(1.02);
   }
   100% {
-    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
   }
 }
 @keyframes hideAnimation {
   0% {
-    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
   }
   60% {
-    transform: scaleY(0.98);
+    -webkit-transform: scaleY(0.98);
+            transform: scaleY(0.98);
   }
   80% {
-    transform: scaleY(1.02);
+    -webkit-transform: scaleY(1.02);
+            transform: scaleY(1.02);
   }
   100% {
-    transform: scaleY(0);
-  }
-}
-@-moz-keyframes hideAnimation {
-  0% {
-    transform: scaleY(1);
-  }
-  60% {
-    transform: scaleY(0.98);
-  }
-  80% {
-    transform: scaleY(1.02);
-  }
-  100% {
-    transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
   }
 }
 @-webkit-keyframes hideAnimation {
   0% {
-    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
   }
   60% {
-    transform: scaleY(0.98);
+    -webkit-transform: scaleY(0.98);
+            transform: scaleY(0.98);
   }
   80% {
-    transform: scaleY(1.02);
+    -webkit-transform: scaleY(1.02);
+            transform: scaleY(1.02);
   }
   100% {
-    transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
   }
 }
 /*====== end wrapper=======*/
@@ -643,6 +631,8 @@ img {
     line-height: 13px;
     text-align: center;
     border-radius: 100%;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     padding: 1em;
   }
@@ -841,7 +831,8 @@ img {
     margin: 0 auto;
     display: table-cell;
     vertical-align: top;
-    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
     color: black;
     font-size: 18px;
   }
@@ -927,5 +918,3 @@ img {
     font-size: 1.2em;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
