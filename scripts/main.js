@@ -21,17 +21,17 @@ dropdownArray.forEach(function(el){
 	var button = el.querySelector('a[data-toggle="dropdown"]'),
 			menu = el.querySelector('.dropdown-menu'),
 			arrow = button.querySelector('.ion-arrow-down-b'),
-			circles = el.querySelector('.orange-parent');
+			orange = el.querySelector('.orange-parent'),
+			pink = el.querySelector('.pink-parent'),
+			purple = el.querySelector('.purple-parent'),
+			yellow = el.querySelector('.yellow-parent'),
+			red = el.querySelector('.red-parent');
 
-			// menu.classList.add('hide');
-			// circles.classList.add('transparent');
 
 	button.onclick = function(event) {
 		if(!menu.hasClass('show')) {
 			menu.classList.add('show');
 			menu.classList.remove('hide');
-			circles.classList.add('opaque');
-			circles.classList.remove('transparent');
 			arrow.classList.add('open');
 			arrow.classList.remove('close');
 			event.preventDefault();
@@ -39,12 +39,65 @@ dropdownArray.forEach(function(el){
 		else {
 			menu.classList.remove('show');
 			menu.classList.add('hide');
-			circles.classList.remove('opaque');
-			circles.classList.add('transparent');
 			arrow.classList.remove('open');
 			arrow.classList.add('close');
 			event.preventDefault();
 		}
+
+// Does the clicked element have a query selector?
+
+		if(orange) {
+			if(!orange.hasClass('opaque')) {
+				orange.classList.add('opaque');
+				orange.classList.remove('transparent');
+			}
+			else {
+				orange.classList.remove('opaque');
+				orange.classList.add('transparent');			
+			}
+		}
+		else if(pink) {
+			if(!pink.hasClass('opaque')) {
+				pink.classList.add('opaque');
+				pink.classList.remove('transparent');
+			}
+			else {
+				pink.classList.remove('opaque');
+				pink.classList.add('transparent');			
+			}
+		}
+		else if(purple) {
+			if(!purple.hasClass('opaque')) {
+				purple.classList.add('opaque');
+				purple.classList.remove('transparent');
+			}
+			else {
+				purple.classList.remove('opaque');
+				purple.classList.add('transparent');			
+			}
+		}
+		else if(yellow) {
+			if(!yellow.hasClass('opaque')) {
+				yellow.classList.add('opaque');
+				yellow.classList.remove('transparent');
+			}
+			else {
+				yellow.classList.remove('opaque');
+				yellow.classList.add('transparent');			
+			}
+		}
+		else if(red) {
+			if(!red.hasClass('opaque')) {
+				red.classList.add('opaque');
+				red.classList.remove('transparent');
+			}
+			else {
+				red.classList.remove('opaque');
+				red.classList.add('transparent');			
+			}
+		}
+
+
 	};
 })
 
