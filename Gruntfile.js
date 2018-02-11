@@ -16,9 +16,7 @@ module.exports = function(grunt){
 		 			// souremap: 'none',
 		 		},
 		 		files: {
-		 			'compiled/style.css': 'scss/style.scss',
-		 			'compiled/_portfolio.css': 'scss/_portfolio.scss',
-		 			'compiled/_contact.css': 'scss/_contact.scss'
+		 			'compiled/style.css': 'scss/style.scss'
 		 		}
 		 	},
 		 	 dist: {
@@ -54,9 +52,9 @@ module.exports = function(grunt){
 		 * Watch task
 		 */
 		 watch: {
-		 	css: {
-		 		files: '**/*.scss',
-		 		tasks: ['sass', 'autoprefixer', 'serve']
+		 	sass: {
+		 		files: 'scss/*.scss',
+		 		tasks: ['sass']
 		 	}
 		 },
 

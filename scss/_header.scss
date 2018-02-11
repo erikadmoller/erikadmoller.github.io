@@ -1,0 +1,69 @@
+header {
+	margin: 0 2em;
+	margin-top: 2.3em;
+
+	.header-wrapper {
+		overflow: hidden;
+	}
+
+	.logo {
+		float: left;
+	}
+
+	h2 {
+		text-align: left;
+		margin: 0 0.3em;
+		font-style: normal;
+		font-weight: 700;
+	}
+
+	h3 {
+		width: 8em;
+		font-style: italic;
+		font-weight: 400;
+		text-align: left;
+		margin: 0 0.3em;
+	}
+
+	.menu-dropdown {
+
+		float: right;
+
+		.menu-dropdown:hover {
+			cursor: pointer;
+		}
+	}
+
+	nav {
+
+		.menu-title {
+			text-align: right;
+			cursor: pointer;
+			border-bottom: 2px solid #000000;
+
+			&:hover {
+			border-bottom: 2px solid #EDCB52;
+			}
+		}
+
+		.menu-submenu {
+			display: none;
+			cursor: auto;
+			text-align: right;
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			font-family: $copy;
+			color: #616161;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 1.1em;
+			text-transform: uppercase;
+		}
+	}
+}
