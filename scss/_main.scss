@@ -8,25 +8,99 @@ body {
 	margin-top: 5em;
 }
 
+.link {
+	border-bottom: 2px solid $links;
+}
+
 .main-title {
 	font-family: $primary;
 	margin: 70px 0;
 	text-align: center;
-	font-style: italic;
 	font-weight: 700;
 
+	@media screen and (max-width: 639px) {
+		margin: 20px 0;
+	}
+
 	a {
-		border-bottom: 2px solid #EDCB52;
+		border-bottom: 2px solid $links;
 	}
 }
 
 .wrapper {
 	padding: 0 5%;
  	margin: 0 auto;
- 	color: black;
+ 	color: #434343;;
  	max-width: 460px;
 
  	ul {
  		padding: 0
+ 	}
+ }
+
+ .intro {
+ 	padding: 0 5% 60px 5%;
+ 	margin: 0 auto;
+ 	max-width: 50em;
+ 	margin-top: 80px;
+
+ 	@media screen and (max-width: 639px) {
+ 		padding: 0 5% 30px 5%;
+		margin-top: 30px;
+	}
+ }
+
+ .hello {
+ 	margin: 0 auto 90px auto;
+ 	text-align: center;
+ 	position: relative;
+ 	max-width: 600px;
+
+ 	@media screen and (max-width: 639px) {
+		margin-bottom: 30px;
+	}
+
+ 	h2 { 
+ 		margin-bottom: 15px; 
+ 		color: #d8d8d8; 
+ 		position: absolute;
+ 		z-index: -1;
+ 		left: 0;
+  		right: 0;
+    	text-align: center;	
+    	font-size: 280px;
+
+    	@media screen and (max-width: 639px) {
+    		font-size: 150px;
+    		bottom: -90px;
+    	}
+ 	}
+
+ }
+ .tiny-bio {
+ 	padding: 0 20px;
+ 	text-align: center;
+
+ 	@media screen and (max-width: 639px) {
+		padding: 0;
+	}
+
+ 	.copy {
+ 		text-align: center;
+ 	}
+
+ 	h3 { 
+ 		margin: 0 auto; 
+ 		padding: 10px;
+ 		display: inline-block;
+ 		color: $carbon;
+ 		background: rgba(202, 235, 242, .6);
+ 	}
+ 	p { 
+ 		margin-top: 8px; 
+ 		padding: 10px;
+ 		display: inline-block;
+ 		color: $carbon; 
+ 		background: rgba(202, 235, 242, .6);
  	}
  }

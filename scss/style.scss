@@ -34,14 +34,14 @@
 /*============footer===========*/
 
 .footer-wrapper {
-	background-color: #000000;
+	background-color: $carbon;
 	clear: both;
 	margin: 80px 0 0 0;
 }
 
 .footer {
 	padding: 4em 0;
-	width: 15em;
+	text-align: center;
 	margin: 0 auto;
 }
 
@@ -116,27 +116,11 @@
 
 @media screen and (min-width: 768px) {
 
-	.main-title {
-		font-size: 60px;
-	}
-
-	h1 {
-		font-size: 60px;
-	}
-
 .wrapper {
  	margin: 0 auto;
- 	color: black;
+ 	color: #000000;
  	max-width: 750px;
  	padding: 0;
-
-	ul {
-	    display: inline-block;
-	    height: 400px;
-	    position: relative;
-	    width: 750px;
-	    padding: 0;
-	}
 
 	.key-header {
 		text-transform: uppercase;
@@ -345,15 +329,6 @@
 		.dropdown-menu {
 			width: 200px;
 		}
-		// .bubble {
-		// 	display: none;
-		// }
-		// #fill-bubble {
-		// 	display: none;
-		// }
-		// #unfill-bubble {
-		// 	display: none;
-		// }
 	}
 	/*===== end 'dropdown' ======*/
 }
@@ -472,8 +447,6 @@
 @media screen and (min-width: 960px) {
 	
 	header {
-	margin: 0 8em;
-	margin-top: 2.3em;
 
 		nav {
 
@@ -492,7 +465,6 @@
 			li {
 				display: inline-block;
 				margin: 0 0.6em;
-				font-size: 1.2em;
 			}
 		}
 	}

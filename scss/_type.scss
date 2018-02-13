@@ -1,24 +1,27 @@
 /*======font families, color, spacing======*/
 
 $head: 'Lora', serif;
-$copy: 'Vollkorn', sans-serif;
-$primary: 'Vollkorn', serif;
+$copy: 'Montserrat', sans-serif;
+$primary: 'Montserrat', serif;
 
 h1{
 	margin: 0.3em 0;
-	color: #000000;
+	// color: #434343;
+	color: $carbon;
 }
 
 h2 {
 	font-family: $primary;
-	font-weight: 400;
-	color: #000000;
-	text-shadow: -1.5px 1.5px 0 #FEFFE6, -2.5px 2.5px 0 #EDCB52;
+	font-weight: 700;
+	color: $carbon;
+	margin: 0.3em 0;
 }
 
 h3 {
-	color: #616161;
+	color: $carbon;
 	font-family: $primary;
+	font-weight: 600;
+	margin: 0;
 }
 
 h4 {
@@ -26,12 +29,15 @@ h4 {
 	margin: 0;
 	font-weight: 400;
 	font-style: normal;
-	color: #000000;
+	color: $carbon;
 }
 
 p {
 	font-family: $copy;
+	font-weight: 400;
 	margin: 0;
+	color: $carbon;
+	line-height: 20px;
 }
 
 /*======font size=======*/
@@ -49,11 +55,25 @@ h4 {
 	font-size: 20px;
 }
 p {
+	font-size: 16px;
+}
+
+label {
+	font-family: $head;
+	font-weight: 700;
+	color: $carbon;
 	font-size: 20px;
 }
 
 ul {
 	list-style: none;
+}
+li { 
+	color: $carbon; 
+	font-family: $copy;
+	font-weight: 400;
+	line-height: 30px;
+	font-size: 16px;
 }
 
 a {
@@ -63,11 +83,11 @@ a {
 	transition-delay: 0s;
 	color: inherit;
 }
-a:hover {
-	transition-property: color;
-	transition-duration: 0.5s;
-	transition-delay: 0s;
-	color: #EDCB52;
-	cursor: pointer;
-	text-decoration: none;
-}
+// a:hover {
+// 	transition-property: color;
+// 	transition-duration: 0.5s;
+// 	transition-delay: 0s;
+// 	color: #EDCB52;
+// 	cursor: pointer;
+// 	text-decoration: none;
+// }

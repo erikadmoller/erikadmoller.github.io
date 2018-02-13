@@ -4,47 +4,73 @@
 	margin: 0;
 }
 
-.contact-form {
-	margin: 0 auto;
+.about {
+	.wrapper {
+		margin: 50px auto;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
 
-	.form-box {
-		display: block;
-		border-radius: 5px;
-		font-size: 1em;	  
-		outline: none;
-		padding: 10px;
-		border: 1px solid #CCCCCC;
-		width: 90%;
-		margin: 5px auto;
-	}
-	 
-	.form-box:focus {
-		border: 1px solid #51cbee;
-	}
+		-webkit-flex-flow: row nowrap;
+		flex-flow: row nowrap;
 
-	.message-box {
-		height: 10em;
+		@media screen and (max-width: 639px) {
+			margin: 15px auto;
+			
+			-webkit-flex-flow: column wrap;
+			flex-flow: column wrap;
+		}
 	}
 
-	.submit-wrapper {
-		margin: 0 auto;
-		width: 166px;
-	}
+	.bio-pic {
+		-webkit-box-flex: 1;
+		-moz-box-flex:  1;
+		-webkit-flex:  1;
+		-ms-flex:  1;
+		flex: 1;
+		padding-right: 20px;
 
-	.submit-box {
-		width: 8em;
-		margin-bottom: 2em;
-		padding: 0.5em 0.5em;
-		border-radius: 5px;
-		border: none;
-		outline: none;
-		font-family: $copy;
-		font-size: 1.3em;
-		background-color: #8FDBD4;
-	}
+		@media screen and (max-width: 639px) {
+			padding-right: 0;
+			padding-bottom: 20px;
+		}
 
-	.submit-box:focus {
-		border: 1px solid rgba(81, 203, 238, 1);		
+	}
+	.bio-copy {
+		-webkit-box-flex: 3;
+		-moz-box-flex:  3;
+		-webkit-flex:  3;
+		-ms-flex:  3;
+		flex: 3;
+
+		@media screen and (max-width: 639px) {
+			-webkit-box-flex: 1;
+			-moz-box-flex:  1;
+			-webkit-flex:  1;
+			-ms-flex:  1;
+			flex: 1;
+		}
+
+		p {
+			line-height: 30px;
+
+		}
+	}
+	.skills, .goals {
+		-webkit-box-flex: 1;
+		-moz-box-flex:  1;
+		-webkit-flex:  1;
+		-ms-flex:  1;
+		flex: 1;
+
+		li {
+			padding: 10px;
+		    margin: 4px 3px;
+		    background: rgba(202, 235, 242, 0.6);
+		    display: inline-block;
+		}
 	}
 }
 

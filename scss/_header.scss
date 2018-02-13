@@ -1,14 +1,36 @@
 header {
-	margin: 0 2em;
-	margin-top: 2.3em;
+	padding: 0 5%;
+    margin: 0 auto;
+    background-color: $sky;
+    overflow: hidden;
 
 	.header-wrapper {
 		overflow: hidden;
+		margin: 0 auto;
+    	text-align: center;
+    	justify-content: space-between;
+	    margin-top: 25px;
+	    padding-bottom: 15px;
+
+    	display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+
+		-webkit-flex-flow: row wrap;
+		flex-flow: row wrap;
+
+		-webkit-box-pack: space-between;
+		-webkit-justify-content: space-between;
+		-ms-flexbox: justify;
+		justify-content: space-between;
 	}
 
-	.logo {
-		float: left;
+	.header-wrapper .logo {
+		margin-top: 17px;
 	}
+
 
 	h2 {
 		text-align: left;
@@ -29,6 +51,10 @@ header {
 
 		float: right;
 
+		@media screen and (max-width: 639px) {
+			width: 100%;
+		}
+
 		.menu-dropdown:hover {
 			cursor: pointer;
 		}
@@ -38,18 +64,29 @@ header {
 
 		.menu-title {
 			text-align: right;
-			cursor: pointer;
-			border-bottom: 2px solid #000000;
+		    float: right;
+		    cursor: pointer;
+		    display: inline-block;
+			border-bottom: 2px solid $links;
 
 			&:hover {
-			border-bottom: 2px solid #EDCB52;
+				border-bottom: 2px solid $links;
+			}
+
+			@media screen and (max-width: 639px) {
+				margin-top: 15px;
 			}
 		}
 
 		.menu-submenu {
 			display: none;
-			cursor: auto;
-			text-align: right;
+		    text-align: left;
+		    float: right;
+		    clear: both;
+
+		    @media screen and (max-width: 639px) {
+				float: left;
+			}
 		}
 
 		ul {
@@ -59,11 +96,18 @@ header {
 
 		li {
 			font-family: $copy;
-			color: #616161;
+			color: $carbon;
 			font-style: normal;
 			font-weight: 400;
-			font-size: 1.1em;
-			text-transform: uppercase;
+			font-size: 17px;
+
+			&.active-box {
+				border-bottom: 2px solid $links;
+			}
+
+			&:hover {
+				border-bottom: 2px solid $links;
+			}
 		}
 	}
 }
