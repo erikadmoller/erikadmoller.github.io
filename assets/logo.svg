@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="310px" height="42px" viewBox="0 0 310 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="erika.carrington-resume" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-141.000000, -62.000000)">
+        <g id="logo" transform="translate(143.000000, 55.000000)">
+            <polygon id="Path-4" fill="#888888" points="88.6118164 34.6655273 88.6118164 27.4301758 83.6772461 28.2587891 78.3496094 30.0478516 78.3496094 35.6123047 80.2460938 37.4887695 84.4829102 36.9121094"></polygon>
+            <polygon id="Path-2" fill="#888888" points="142.656738 27.8681641 142.656738 34.5463867 138.462891 37.0927734 133.92627 37.0927734 131.751953 33.5209961 132.434082 30.71875 136.390137 27.8681641"></polygon>
+            <path d="M5.49658203,26.4759521 C5.49658203,26.6903076 17.9050293,26.4759521 19.9003906,26.4759521 C19.9003906,25.3417969 20.4049072,19.0483398 11.599997,18.7999992 C2.79508686,18.5516586 5.49658203,25.3451537 5.49658203,26.4759521 Z" id="Path-24" fill="#888888"></path>
+            <path d="M238.534668,27.6203613 C238.534668,27 238.312256,21.7138672 237.212891,20.7080078 C236.113525,19.7021484 234.944824,17.5615234 232.06958,18.1123047 C229.194336,18.6630859 226.709229,20.1115723 226.567383,23.0253906 C226.425537,25.939209 227.27002,29.1213379 228.14624,29.861084 C229.022461,30.6008301 231.574707,32.1291504 233.941895,31.4746094 C236.309082,30.8200684 238.534668,28.2407227 238.534668,27.6203613 Z" id="Path-23" fill="#888888"></path>
+            <text id="erika-carrington" font-family="Lora-Regular, Lora" font-size="40" font-weight="normal" letter-spacing="0.577777863" fill="#888888">
+                <tspan x="0" y="38">erika carrington</tspan>
+            </text>
+            <path d="M21.5,27 L0.5,27" id="Line-6" stroke="#CAEBF2" stroke-width="4" stroke-linecap="square"></path>
+            <path d="M226.237558,27 L148.97411,27" id="Line-6-Copy-3" stroke="#CAEBF2" stroke-width="4" stroke-linecap="square"></path>
+            <g id="Group-11" transform="translate(262.000000, 17.000000)">
+                <rect id="Rectangle-4" fill="#CAEBF2" x="0" y="0" width="20" height="23"></rect>
+                <circle id="Oval" stroke="#FF3B3F" stroke-width="2" cx="10.5" cy="10.5" r="9.5"></circle>
+                <circle id="Oval-6" fill="#FF3B3F" cx="10.5" cy="10.5" r="6.5"></circle>
+            </g>
+            <path d="M224,27 L243,27" id="Line" stroke="#CAEBF2" stroke-width="4" stroke-linecap="square"></path>
+            <path d="" id="Path-3" stroke="#979797"></path>
+        </g>
+    </g>
+</svg>
