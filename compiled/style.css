@@ -315,8 +315,8 @@ body {
   }
 }
 .hello h2 {
-  margin-bottom: 15px;
-  color: #d8d8d8;
+  margin: 0 0 15px 0;
+  color: #E3E3E3;
   position: absolute;
   z-index: -1;
   left: 0;

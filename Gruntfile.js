@@ -56,19 +56,9 @@ module.exports = function(grunt){
 		 		files: 'scss/*.scss',
 		 		tasks: ['sass']
 		 	}
-		 },
-
-		/**
-		 * Serve task
-		 */
-		 serve: {
-		 	options: {
-		 		port: 9000
-		 	}
 		 }
 	});
 
-	grunt.loadNpmTasks('grunt-serve');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-autoprefixer');
