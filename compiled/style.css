@@ -183,6 +183,18 @@ header .header-wrapper {
 }
 header .header-wrapper .logo {
   margin-top: 17px;
+  background-image: url("../assets/logo.svg");
+  background-size: cover;
+  width: 355px;
+  height: 47px;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 639px) {
+  header .header-wrapper .logo {
+    background-image: url("../assets/logo-mobile.svg");
+    width: 300px;
+    height: 40px;
+  }
 }
 header h2 {
   text-align: left;
@@ -356,6 +368,7 @@ body {
   display: inline-block;
   color: #888888;
   background: rgba(202, 235, 242, 0.6);
+  line-height: 29px;
 }
 
 /*========portfolio==========*/
