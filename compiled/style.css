@@ -192,8 +192,8 @@ header .header-wrapper .logo {
 @media screen and (max-width: 639px) {
   header .header-wrapper .logo {
     background-image: url("../assets/logo-mobile.svg");
-    width: 300px;
-    height: 40px;
+    width: 270px;
+    height: 35px;
   }
 }
 header h2 {
