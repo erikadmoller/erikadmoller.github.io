@@ -338,7 +338,7 @@ body {
 }
 @media screen and (max-width: 639px) {
   .hello h2 {
-    font-size: 150px;
+    font-size: 124px;
     bottom: -90px;
   }
 }
