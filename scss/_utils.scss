@@ -1,0 +1,89 @@
+/* typcally applied to individual tiles, boxes, elements. Not groups or components,
+ * that would be more section/grid related */
+/* left and right gutters */
+@mixin gutter-x {
+  margin-right: $defaultGutterSm;
+  margin-left: $defaultGutterSm;
+  @media screen and (min-width: 640px) {
+    margin-right: $defaultGutterLg;
+    margin-left: $defaultGutterLg;
+  }
+}
+/* all sides gutters */
+@mixin gutter-xy {
+  margin: $defaultGutterSm;
+  @media screen and (min-width: 640px) {
+    margin: $defaultGutterLg;
+  }
+}
+/* customize size grid */
+@mixin grid($width: $container) {
+  
+  $container: $width;
+  
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  
+  max-width: $container;
+  margin: 0 auto;
+  
+}
+/* Column Mixin */
+@mixin column($span: $columns, $gap: "no arguemnt has been passed") {
+  @if ($gap == "no arguemnt has been passed") {
+    $gap: $defaultGutterSm;
+     @media screen and (min-width: 640px) {
+       $gap: $defaultGutterLg;
+     }
+  }
+  $totalGutter: $gap * 2;
+  
+  $columns: $span;
+  flex: 0 0 calc(#{$columns} - #{$totalGutter});
+  margin-right: $gap;
+  margin-left: $gap;
+  margin-bottom: $gap;
+  margin-top: $gap;
+    
+}
+@mixin justGutters($gap: "no arguemnt has been passed") {
+  @if ($gap == "no arguemnt has been passed") {
+    $gap: $defaultGutterSm;
+     @media screen and (min-width: 640px) {
+       $gap: $defaultGutterLg;
+     }
+  }
+  margin-right: $gap;
+  margin-left: $gap;
+  margin-bottom: $gap;
+  margin-top: $gap;
+}
+@mixin clearfix {
+  &:after {
+    display: table;
+    clear: both;
+    content:'';
+  }
+}
+  
+/* Accessible hiding */
+@mixin screen-reader-text() {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+  
+/* vertical positioning */
+@mixin vertical-horizontal-centered {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform:    translateY(-50%);
+  -ms-transform:     translateY(-50%);
+  -o-transform:      translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform:         translateY(-50%);
+}

@@ -1,0 +1,69 @@
+.o-col-1 { width: 100%; }
+.o-col-2 { width: percentage(2/12); }
+.o-col-3 { width: percentage(3/12); }
+.o-col-4 { width: percentage(4/12); }
+.o-col-5 { width: percentage(5/12); }
+.o-col-6 { width: percentage(6/12); }
+.o-col-8 { width: percentage(8/12); }
+.o-col-10 { width: percentage(10/12); }
+.o-col-12 { width: percentage(12/12); }
+
+.o-box-1 { 
+    @include column(100%);
+}
+.o-box-2 { 
+    @include column(percentage(2/12)); 
+}
+.o-box-3 { 
+    @include column(percentage(3/12)); 
+}
+.o-box-4 {  
+    @include column(percentage(4/12)); 
+}
+.o-box-5 { 
+    @include column(percentage(5/12));  
+}
+.o-box-6 { 
+    @include column(percentage(6/12)); 
+}
+.o-box-8 { 
+    @include column(percentage(8/12)); 
+}
+.o-box-9 { 
+    @include column(percentage(10/12)); 
+}
+.o-box-12 { 
+    @include column(percentage(12/12)); 
+}
+
+
+.grid-container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: $max-width;
+}
+.o-grid {
+    @include justify-content(center);
+    @include flexbox();
+    @include flex-wrap(wrap);
+}
+.o-grid--is-spaced {
+    @include gutter-xy;
+}
+.o-grid--is-spaced > [class*=o-col] {
+    padding: $defaultGutterSm;
+    @media screen and (min-width: 640px) {
+        padding: $defaultGutterLg * 2;
+    }
+}  
+.o-section {
+    /* not the same as gutters because it applying to group of elements (that have gutters) */
+    margin: 0 0.6rem;
+    @media screen and (min-width: 640px) {
+        margin: 0 3.125rem;
+    }
+    @media screen and (min-width: 1040px) {
+        margin: 0 6.125rem;
+    }
+}
