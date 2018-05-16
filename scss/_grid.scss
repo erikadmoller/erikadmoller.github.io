@@ -1,3 +1,8 @@
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+/* no margins or padding, just plain column sizes */
 .o-col-1 { width: 100%; }
 .o-col-2 { width: percentage(2/12); }
 .o-col-3 { width: percentage(3/12); }
@@ -8,6 +13,11 @@
 .o-col-10 { width: percentage(10/12); }
 .o-col-12 { width: percentage(12/12); }
 
+.o-col-6-hasgutter {
+    width: calc(50% - 0.6em);
+}
+
+/* includes default margin/padding */
 .o-box-1 { 
     @include column(100%);
 }
@@ -36,6 +46,12 @@
     @include column(percentage(12/12)); 
 }
 
+.o-sm-box-12 {
+    @media screen and (max-width: 740px) {
+        @include column(percentage(12/12)); 
+    }
+}
+
 
 .grid-container {
     margin-right: auto;
@@ -56,7 +72,8 @@
     @media screen and (min-width: 640px) {
         padding: $defaultGutterLg * 2;
     }
-}  
+} 
+/* with margins */ 
 .o-section {
     /* not the same as gutters because it applying to group of elements (that have gutters) */
     margin: 0 0.6rem;
@@ -67,3 +84,23 @@
         margin: 0 6.125rem;
     }
 }
+.o-section--border-bottom {
+    @extend .o-section;
+    border-bottom: 1px solid #aaaaaa;
+}
+/* with padding */
+.o-section-wrapper {
+    padding: 0 1.2rem;
+
+    @media screen and (min-width:640px) {
+        padding: 0 3.1rem;
+    }
+    @media screen and (min-width:1040px) {
+        padding: 0 6.7rem;
+    }
+}
+.o-section-wrapper--border-bottom {
+    @extend .o-section-wrapper;
+    border-bottom: 1px solid #aaaaaa;
+}
+
