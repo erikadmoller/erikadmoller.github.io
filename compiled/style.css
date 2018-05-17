@@ -226,14 +226,10 @@ header .header-wrapper {
 header .header-wrapper .logo {
   margin-top: 17px;
   background-image: url("../assets/logo.png");
+  background-size: contain;
   width: 310px;
   height: 49px;
   background-repeat: no-repeat;
-}
-@media screen and (max-width: 639px) {
-  header .header-wrapper .logo {
-    background-size: contain;
-  }
 }
 header h2 {
   text-align: left;

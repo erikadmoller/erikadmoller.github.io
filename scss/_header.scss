@@ -30,16 +30,17 @@ header {
 	.header-wrapper .logo {
 		margin-top: 17px;
 		background-image: url('../assets/logo.png');
+		background-size: contain;
 	    width: 310px;
 	    height: 49px;
 	    background-repeat: no-repeat;
 
-	    @media screen and (max-width: 639px) {
+	    // @media screen and (max-width: 639px) {
 			// background-image: url('../assets/logo-mobile.svg');
 	     //    width: 220px;
     		// height: 29px;
-    		background-size: contain;
-		}
+
+		// }
 	}
 
 
