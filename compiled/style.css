@@ -230,6 +230,11 @@ header .header-wrapper .logo {
   height: 49px;
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 639px) {
+  header .header-wrapper .logo {
+    background-size: contain;
+  }
+}
 header h2 {
   text-align: left;
   margin: 0 0.3em;
@@ -527,6 +532,7 @@ img {
 @media screen and (max-width: 740px) {
   .thumbs {
     margin: 1em auto !important;
+    padding: 10px;
   }
 }
 
@@ -994,6 +1000,7 @@ img {
 @media screen and (max-width: 740px) {
   .thumbs {
     margin: 1em auto !important;
+    padding: 10px;
   }
 }
 
