@@ -131,6 +131,23 @@ img {
 		margin: 1em auto !important;
 		padding: 10px;
 	}
+
+	a {
+		display: block;
+		overflow: hidden;
+
+		.zoom {
+			overflow: hidden;
+		}
+
+		img {
+			@include transition(.5s);
+		}
+
+		&:hover img {
+			@include transform(scale(1.1));
+		}
+	}
 }
 
 .description {
@@ -216,7 +233,11 @@ img {
 }
 
 .project-hero__intro {
-	padding: 0 2em;
+	padding: 0 0.8em;
+
+	@media screen and (min-width: 740) {
+		padding: 0 2em;
+	}
 }
 
 .project-hero__image {
@@ -236,10 +257,20 @@ img {
 	border-bottom: 1px solid #e4e4e4;
 	padding-bottom: 0.3em;
 	margin-bottom: 0;
+
+	@media screen and (max-width: 740) {
+		font-size: 24px;
+	}
 }
 
 .page-title__link {
-	p { text-decoration: underline; }
+	p { 
+		text-decoration: underline; 
+		
+		@media screen and (max-width: 740) {
+			font-size: 12px;
+		}
+	}
 
 	&:hover p {
 		color: $sky;

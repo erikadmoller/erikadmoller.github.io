@@ -1,8 +1,17 @@
 $(document).ready(function() {
+	var $intro = $('.intro');
+
+	$('.intro iframe').attr('src', 'https://giphy.com/embed/ypqHf6pQ5kQEg').load(function() {
+		$intro.addClass('slide-up-fade-in');
+	});
+
+	$('.portfolio .grid-container').load(function() {
+		$('.grid-container').addClass('slide-up-fade-in');
+	});
 	
   $(".menu-dropdown").click(function() {
     $('.menu-submenu').slideToggle(300);
-});
+  });
 
 	//Mouseup textarea false
 	$(".menu-submenu").mouseup(function() {
