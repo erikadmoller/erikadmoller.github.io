@@ -29,17 +29,16 @@ header {
 
 	.header-wrapper .logo {
 		margin-top: 17px;
-		background-image: url('../assets/logo.svg');
-		background-size: cover;
-	    width: 355px;
-	    height: 47px;
+		background-image: url('../assets/logo.png');
+	    width: 310px;
+	    height: 49px;
 	    background-repeat: no-repeat;
 
-	    @media screen and (max-width: 639px) {
-			background-image: url('../assets/logo-mobile.svg');
-	        width: 220px;
-    		height: 29px;
-		}
+	 //    @media screen and (max-width: 639px) {
+		// 	background-image: url('../assets/logo-mobile.png');
+	 //        width: 220px;
+  //   		height: 29px;
+		// }
 	}
 
 

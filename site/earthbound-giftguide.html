@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Erika Moller</title>
+		<link rel="stylesheet" type="text/css" href="../bower_components/normalize.css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="../compiled/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:400,600,700" rel="stylesheet">
+		<link rel="stylesheet" href="../assets/ionicons.css">
+	</head>
+	<body>
+		<header>
+			<div class="header-wrapper">
+				<div class="logo"></div>
+				<div class="menu-dropdown">
+					<nav>
+						<div class="menu-title">
+							<h4>Menu</h4>
+						</div>
+						<div class="menu-submenu">
+							<ul>
+								<li class="active-box"><a href="../index.html">portfolio</a></li>
+								<li><a href="./contact.html">about</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="portfolio">
+			<div style="background-color: #ffffff;">
+				<section class="grid-container">
+					<div class="o-grid project-hero">
+						<section role="the challenge" class="o-box-6 o-sm-box-12 project-hero__intro">
+							<h1 class="page-title">Landing Page Design</h1>
+							<a class="page-title__link" href="http://www.earthboundtrading.com/gift-guide"><p>www.earthboundtrading.com/gift-guide</p></a>
+							<p>Gift Guide 2017 is a landing page for users to shop holiday gifts from our several eccentric categories.
+							</p>
+						</section>
+						<section role="hero image" class="o-box-6 o-sm-box-12 project-hero__image">
+							<img src="../assets/features-giftguide.jpg"/>
+						</section>
+					</div>
+				</section>
+			</div>
+			<section class="grid-container">
+				<div class="o-grid o-section">
+					<section role="hero" class="o-box-8 o-sm-box-12">
+						<img src="../assets/giftguide-landing.jpg"/>
+					</section>
+					<section role="hero" class="o-box-4 o-sm-box-12">
+						<img src="../assets/giftguide-landing-mobile.jpg"/>
+					</section>
+				</div>
+				<div class="o-grid o-section-wrapper--border-bottom">
+					<section role="the challenge" class="o-box-9">
+						<h2>The challenge</h2>
+						<p>Last season we had an unusual amount of products that were challenging to group together into categories. The team decided to get a little wild and come up with unique category groupings. Presenting all this content was challenge, especially for mobile.</p>
+						<p>We wanted to make our gift guide festive and add some interaction into the shopping experience.</p>
+					</section>
+				</div>
+				<div class="o-grid o-section">
+					<section role="research and discovery" class="o-box-9">
+						<h2>Research and discovery</h2>
+						<p>In our reserach we found most of our comptitors kept their gift guide's vanilla and static. We did come across a few interactive gift guide's and took some functionality that would help our customers move through our long gift guide.</p>
+						<p>There was a lot of pressure to succeed in profits and we already knew the more product we could exhibit the better.</p>
+						<p>I researched some of our technical options to understand what I could extend technically to meet our needs. There was no room in the budget for extravagent technical solutions.</p>
+					</section>
+				</div>
+				<div class="o-grid o-section">
+					<section role="sketching wireframes" class="o-box-9">
+						<h2>Sketching wireframes</h2>
+						<p><strong>Vertical Navigation:</strong> In sketches we discovered that we needed a vertical navigation because we had so many categories. Actually, we also needed the vertical navigation to scroll when its length became an issue on certain desktop sizes. That led me to suggest we make the vertical nav sticky to one side and use anchor links to each category so users could quickly browse.</p>
+						<p><strong>Main Navigation:</strong> We were getting pressure to capitalize on this campaign, so we broke our rule to never change the main navigation and planned the Gift Guide to remain in the main nav throughout the holiday season.</p>
+						<p><strong>Mobile Adaptation:</strong> Resizing the enormous amount of content down to mobile proved a terrible experience. It was unlikely users would stick around and get to the lower categories. The vertical nav had to be scrapped because it simply would not fit. We compromised and cut out the product groupings and used a single image and shop button to represent each category. This kept the scrolling on mobile down to a minimum.</p>
+						<p><strong>You want to do what?</strong> On desktop stakeholders were happy with the amount of content. They liked having both titles and 'Shop Now' buttons for every category section. This proved a technical challenge on mobile after prototyping it. The unusual fonts chosen by another team were a challenge to work with on mobile and it was scrapped. As the developer I had to change the button html text to be different on mobile from desktop so that users could understand the context of their shopping experience.</p>
+					</section>
+				</div>
+				<div class="o-grid o-section">
+					<section role="sketches" class="o-box-6 o-sm-box-12">
+						<img src="../assets/giftguide-sketch.jpg"/>
+					</section>
+				</div>
+				<div class="o-grid o-section">
+					<section role="sketching wireframes" class="o-box-9">
+						<h2>Product blocks</h2>
+						<p>Content managers espeically liked that they could rotate out the product image blocks themselves. I found a piece of unused code hidden away in our Magento templates. I edited it to the design specs and hooked it up to the CMS.</p>
+						<p>All in all everything worked out well and we did have a good holiday season.</p>
+					</section>
+				</div>
+			</section>
+		</main>
+		<footer class="footer-wrapper">
+			<div class="footer">
+				<a href="https://github.com/erikadmoller" class="ion-social-github-outline icons"></a>
+				<a href="site/contact.html" class="ion-ios-email-outline icons"></a>
+			</div>
+		</footer>
+		<script src="../bower_components/jquery/dist/jquery.min.js" type="text/Javascript"></script>
+		<script src="../scripts/main.js"></script>
+	</body>
+</html>

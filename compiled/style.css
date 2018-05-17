@@ -225,18 +225,10 @@ header .header-wrapper {
 }
 header .header-wrapper .logo {
   margin-top: 17px;
-  background-image: url("../assets/logo.svg");
-  background-size: cover;
-  width: 355px;
-  height: 47px;
+  background-image: url("../assets/logo.png");
+  width: 310px;
+  height: 49px;
   background-repeat: no-repeat;
-}
-@media screen and (max-width: 639px) {
-  header .header-wrapper .logo {
-    background-image: url("../assets/logo-mobile.svg");
-    width: 220px;
-    height: 29px;
-  }
 }
 header h2 {
   text-align: left;
@@ -419,6 +411,12 @@ body {
   margin-bottom: 3em;
 }
 
+@media screen and (max-width: 740px) {
+  section[role] h2 {
+    font-size: 1.5em;
+  }
+}
+
 img {
   max-width: 100%;
   image-rendering: -webkit-optimize-contrast;
@@ -439,6 +437,14 @@ img {
   background-position: center;
   background-size: 100%;
   margin-bottom: 3em;
+}
+
+.portfolio img {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio [role="sketch"] img {
+  box-shadow: none;
 }
 
 /*=========project view==========*/
@@ -611,6 +617,25 @@ img {
 .page-title {
   border-bottom: 1px solid #e4e4e4;
   padding-bottom: 0.3em;
+  margin-bottom: 0;
+}
+
+.page-title__link p {
+  text-decoration: underline;
+}
+.page-title__link:hover p {
+  color: #CAEBF2;
+}
+
+.group-img-caption {
+  text-align: center;
+}
+
+.image-caption {
+  margin-bottom: 0.4em;
+  font-size: 12px;
+  color: #868686;
+  letter-spacing: 1px;
 }
 
 *, :after, :before {
@@ -853,6 +878,12 @@ img {
   margin-bottom: 3em;
 }
 
+@media screen and (max-width: 740px) {
+  section[role] h2 {
+    font-size: 1.5em;
+  }
+}
+
 img {
   max-width: 100%;
   image-rendering: -webkit-optimize-contrast;
@@ -873,6 +904,14 @@ img {
   background-position: center;
   background-size: 100%;
   margin-bottom: 3em;
+}
+
+.portfolio img {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio [role="sketch"] img {
+  box-shadow: none;
 }
 
 /*=========project view==========*/
@@ -1045,6 +1084,25 @@ img {
 .page-title {
   border-bottom: 1px solid #e4e4e4;
   padding-bottom: 0.3em;
+  margin-bottom: 0;
+}
+
+.page-title__link p {
+  text-decoration: underline;
+}
+.page-title__link:hover p {
+  color: #CAEBF2;
+}
+
+.group-img-caption {
+  text-align: center;
+}
+
+.image-caption {
+  margin-bottom: 0.4em;
+  font-size: 12px;
+  color: #868686;
+  letter-spacing: 1px;
 }
 
 /*===========contact form==============*/
