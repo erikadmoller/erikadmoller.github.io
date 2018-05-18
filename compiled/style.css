@@ -304,6 +304,16 @@ body {
   background-color: #efefef;
 }
 
+.year {
+  font-size: 23px !important;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #aaa;
+}
+
 .space-header {
   margin-top: 5em;
 }
@@ -577,7 +587,7 @@ img {
 }
 
 .project-features {
-  margin: 0 auto;
+  margin: 0 auto 3em auto;
 }
 
 .project-header {
@@ -1081,7 +1091,7 @@ img {
 }
 
 .project-features {
-  margin: 0 auto;
+  margin: 0 auto 3em auto;
 }
 
 .project-header {

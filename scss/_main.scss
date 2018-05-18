@@ -4,6 +4,16 @@ body {
 	background-color: $background-color;
 }
 
+.year {
+    font-size: 23px !important;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #aaa;
+}
+
 .space-header {
 	margin-top: 5em;
 }
