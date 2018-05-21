@@ -851,6 +851,11 @@ img {
   display: block;
 }
 
+.gif-wrapper {
+  margin: 0 auto;
+  text-align: center;
+}
+
 *, :after, :before {
   box-sizing: border-box;
 }
