@@ -800,6 +800,27 @@ img {
   letter-spacing: 1px;
 }
 
+.blockquote {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 20px;
+  color: #FF3B3F;
+  letter-spacing: 1px;
+}
+
+.blockquote-owner {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  color: #545454;
+  line-height: 1.8em;
+  margin-bottom: 1.4em;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  display: block;
+}
+
 *, :after, :before {
   box-sizing: border-box;
 }
@@ -1302,6 +1323,27 @@ img {
   font-size: 12px;
   color: #868686;
   letter-spacing: 1px;
+}
+
+.blockquote {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 20px;
+  color: #FF3B3F;
+  letter-spacing: 1px;
+}
+
+.blockquote-owner {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  color: #545454;
+  line-height: 1.8em;
+  margin-bottom: 1.4em;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  display: block;
 }
 
 /*===========contact form==============*/
