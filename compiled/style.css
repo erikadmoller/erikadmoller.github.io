@@ -247,7 +247,7 @@ header h3 {
 header .menu-dropdown {
   float: right;
 }
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 960px) {
   header .menu-dropdown {
     width: 100%;
   }
@@ -265,7 +265,7 @@ header nav .menu-title {
 header nav .menu-title:hover {
   border-bottom: 2px solid #FF3B3F;
 }
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 960px) {
   header nav .menu-title {
     margin-top: 15px;
   }
@@ -276,7 +276,7 @@ header nav .menu-submenu {
   float: right;
   clear: both;
 }
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 960px) {
   header nav .menu-submenu {
     float: left;
   }

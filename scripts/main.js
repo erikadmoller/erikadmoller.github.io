@@ -1,23 +1,29 @@
 $(document).ready(function() {
 	var $intro = $('.intro');
 
+	/* graceful slideup of component on load */
 	$('.intro iframe').attr('src', 'https://giphy.com/embed/ypqHf6pQ5kQEg').load(function() {
 		$intro.addClass('slide-up-fade-in');
 	});
-
+	/* graceful slideup of component on load */
 	$('.portfolio .grid-container').load(function() {
 		$('.grid-container').addClass('slide-up-fade-in');
 	});
 	
-  $(".menu-dropdown").click(function() {
-    $('.menu-submenu').slideToggle(300);
-  });
+	$(".menu-dropdown").click(function() {
+		$('.menu-submenu').slideToggle(300);
+	});
+
+	$(window).on('resize', function() {
+		var $win = $(window).width();
+
+		if($win > 960) {
+			$('.menu-submenu').css('display', '');
+		}
+	});
 
 	//Mouseup textarea false
 	$(".menu-submenu").mouseup(function() {
-		return false
-	});
-	$(".menu-dropdown").mouseup(function() {
 		return false
 	});
 

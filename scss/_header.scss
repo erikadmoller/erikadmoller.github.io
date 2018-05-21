@@ -63,7 +63,7 @@ header {
 
 		float: right;
 
-		@media screen and (max-width: 639px) {
+		@media screen and (max-width: 960px) {
 			width: 100%;
 		}
 
@@ -85,7 +85,7 @@ header {
 				border-bottom: 2px solid $links;
 			}
 
-			@media screen and (max-width: 639px) {
+			@media screen and (max-width: 960px) {
 				margin-top: 15px;
 			}
 		}
@@ -96,7 +96,7 @@ header {
 		    float: right;
 		    clear: both;
 
-		    @media screen and (max-width: 639px) {
+		    @media screen and (max-width: 960px) {
 				float: left;
 			}
 		}
