@@ -21,6 +21,32 @@ $(document).ready(function() {
 		return false
 	});
 
+	/* arrow keys for portfolio */
+	function goToProject(position) {
+		var projectLink = $('a[rel="' + position + '"]').attr('href');
+
+		if(projectLink) {
+			window.location.href = projectLink;
+		}
+	}
+	$(document).keydown(function(e) {
+		e.preventDefault();
+		switch(e.which) {
+			case 37:
+			//Left key pressed
+			goToProject('prev');
+			break;
+
+			case 39:
+			//Right key pressed 
+			goToProject('next');
+			break;
+
+			default:
+				return;
+		}
+	});
+
 });
 
 // Dropdown Menu

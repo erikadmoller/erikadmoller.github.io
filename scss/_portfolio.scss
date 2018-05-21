@@ -26,15 +26,6 @@ img {
 	background-position: center;
 }
 
-.project-3 {
-	background-image: url(../assets/image-gallery_thumbnail.png);
-	background-repeat: no-repeat;
-	height: 45.5em;
-	background-position: center;
-	background-size: 100%;
-	margin-bottom: 3em;
-}
-
 .portfolio img {
 	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
 }
@@ -44,6 +35,39 @@ img {
 }
 
 /*=========project view==========*/
+/* project arrows */
+@media screen and (min-width: 1140px) {
+	.next, .prev {
+		width: 56px;
+		height: 115px;
+		display: block;
+		background-image: url('../assets/arrow.png');
+		position: fixed;
+		top: 45%;
+		text-indent: -9999px;
+		z-index: 10;
+		opacity: .3;
+		transition: opacity .5s;
+	}
+}
+
+@media screen and (min-width: 1140px) {
+	.next {
+		right: 0px;
+		background-position: -56px -338px;
+	}
+	.prev {
+		left: 0px;
+		background-position: 0px -338px;
+		@include rotate(180deg);
+	}
+}
+.link-next:hover .next {
+	opacity: 1;
+}
+.link-prev:hover .prev {
+	opacity: 1;
+}
 
 .site-view {
 	background-image: url(../assets/empty_website.png);
@@ -229,7 +253,7 @@ img {
 .project-hero {
 	background-color: #ffffff;
 	margin-bottom: 3.6em;
-	padding: 2em 0;
+	padding: 3em;
 }
 
 .project-hero__intro {

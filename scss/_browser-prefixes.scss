@@ -91,7 +91,15 @@
   -o-transform:      $value;
   transform:         $value;
 }
-  /* transitions */
+@mixin rotate($value) {
+   -webkit-transform: rotate($value);
+  -moz-transform:     rotate($value);
+  -ms-transform:      rotate($value);
+  -o-transform:       rotate($value);
+  transform:          rotate($value);
+}
+
+/* transitions */
 @mixin transition($transition) {
     -webkit-transition: all $transition ease-in-out;
   -moz-transition: all $transition ease-in-out;
