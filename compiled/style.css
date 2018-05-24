@@ -27,14 +27,14 @@
 /* vertical positioning */
 /*======font families, color, spacing======*/
 h1 {
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   margin: 0.3em 0;
   color: #545454;
 }
 
 h2 {
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   color: #545454;
   margin: 1em 0;
@@ -42,7 +42,7 @@ h2 {
 
 h3 {
   color: #545454;
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   margin: 0;
 }
@@ -310,6 +310,12 @@ body {
   text-decoration: underline;
 }
 
+.love-my-work, .tagline {
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
 .border-bottom {
   border-bottom: 1px solid #aaa;
 }
@@ -323,7 +329,7 @@ body {
 }
 
 .main-title {
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat", sans-serif;
   margin: 70px 0;
   text-align: center;
   font-weight: 700;
@@ -515,6 +521,9 @@ body {
 .tiny-bio .copy {
   text-align: center;
 }
+.tiny-bio .copy span {
+  color: #d46466;
+}
 .tiny-bio h3 {
   margin: 0 auto;
   padding: 10px;
@@ -624,7 +633,7 @@ img {
   text-align: left;
 }
 .project-header h1 {
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 .project-header ul {
@@ -743,7 +752,7 @@ img {
     text-align: left;
   }
   .project-header h1 {
-    font-family: "Montserrat", serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
   }
   .project-header ul {
