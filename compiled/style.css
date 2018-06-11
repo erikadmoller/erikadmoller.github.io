@@ -570,6 +570,10 @@ body {
   }
 }
 
+section[role="nav-sketch"] {
+  text-align: center;
+}
+
 @media screen and (min-width: 740px) {
   .desktop-hide {
     display: none;
@@ -580,6 +584,12 @@ body {
   .mobile-hide {
     display: none;
   }
+}
+
+.scroll-feature {
+  max-height: 1000px;
+  height: 100%;
+  overflow: scroll;
 }
 
 .role {
@@ -952,6 +962,13 @@ img {
   color: #868686;
   letter-spacing: 1px;
 }
+.image-caption.block {
+  -webkit-box-flex: 1 100%;
+  -moz-box-flex: 1 100%;
+  -webkit-flex: 1 100%;
+  -ms-flex: 1 100%;
+  flex: 1 100%;
+}
 
 .blockquote {
   font-family: "Montserrat", sans-serif;
@@ -989,7 +1006,7 @@ img {
 }
 
 .o-col-2 {
-  width: 16.66667%;
+  width: 16.6666666667%;
 }
 
 .o-col-3 {
@@ -997,11 +1014,11 @@ img {
 }
 
 .o-col-4 {
-  width: 33.33333%;
+  width: 33.3333333333%;
 }
 
 .o-col-5 {
-  width: 41.66667%;
+  width: 41.6666666667%;
 }
 
 .o-col-6 {
@@ -1009,11 +1026,11 @@ img {
 }
 
 .o-col-8 {
-  width: 66.66667%;
+  width: 66.6666666667%;
 }
 
 .o-col-10 {
-  width: 83.33333%;
+  width: 83.3333333333%;
 }
 
 .o-col-12 {
@@ -1034,7 +1051,7 @@ img {
 }
 
 .o-box-2 {
-  flex: 0 0 calc(16.66667% - 1.2em);
+  flex: 0 0 calc(16.6666666667% - 1.2em);
   margin-right: 0.6em;
   margin-left: 0.6em;
   margin-bottom: 0.6em;
@@ -1050,7 +1067,7 @@ img {
 }
 
 .o-box-4 {
-  flex: 0 0 calc(33.33333% - 1.2em);
+  flex: 0 0 calc(33.3333333333% - 1.2em);
   margin-right: 0.6em;
   margin-left: 0.6em;
   margin-bottom: 0.6em;
@@ -1058,7 +1075,7 @@ img {
 }
 
 .o-box-5 {
-  flex: 0 0 calc(41.66667% - 1.2em);
+  flex: 0 0 calc(41.6666666667% - 1.2em);
   margin-right: 0.6em;
   margin-left: 0.6em;
   margin-bottom: 0.6em;
@@ -1074,7 +1091,7 @@ img {
 }
 
 .o-box-8 {
-  flex: 0 0 calc(66.66667% - 1.2em);
+  flex: 0 0 calc(66.6666666667% - 1.2em);
   margin-right: 0.6em;
   margin-left: 0.6em;
   margin-bottom: 0.6em;
@@ -1082,7 +1099,7 @@ img {
 }
 
 .o-box-9 {
-  flex: 0 0 calc(83.33333% - 1.2em);
+  flex: 0 0 calc(83.3333333333% - 1.2em);
   margin-right: 0.6em;
   margin-left: 0.6em;
   margin-bottom: 0.6em;
