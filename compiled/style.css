@@ -683,7 +683,7 @@ img {
 
 /*=========project view==========*/
 /* project arrows */
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 640px) {
   .next, .prev {
     width: 56px;
     height: 115px;
@@ -697,7 +697,7 @@ img {
     transition: opacity .5s;
   }
 }
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 640px) {
   .next {
     right: 0px;
     background-position: -56px -338px;
@@ -924,7 +924,7 @@ img {
   padding-bottom: 0.3em;
   margin-bottom: 0;
 }
-@media screen and (max-width: 740) {
+@media screen and (max-width: 740px) {
   .page-title {
     font-size: 24px;
   }
@@ -933,7 +933,7 @@ img {
 .page-title__link p {
   text-decoration: underline;
 }
-@media screen and (max-width: 740) {
+@media screen and (max-width: 740px) {
   .page-title__link p {
     font-size: 12px;
   }
