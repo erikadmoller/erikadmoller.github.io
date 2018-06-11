@@ -225,7 +225,7 @@ header .header-wrapper {
 }
 header .header-wrapper .logo {
   margin-top: 17px;
-  background-image: url("../assets/logo.png");
+  background-image: url("../assets/logo.svg");
   background-size: contain;
   width: 310px;
   height: 49px;
@@ -260,10 +260,10 @@ header nav .menu-title {
   float: right;
   cursor: pointer;
   display: inline-block;
-  border-bottom: 2px solid #FF3B3F;
+  border-bottom: 4px solid #FF3B3F;
 }
 header nav .menu-title:hover {
-  border-bottom: 2px solid #FF3B3F;
+  border-bottom: 4px solid #FF3B3F;
 }
 @media screen and (max-width: 960px) {
   header nav .menu-title {
@@ -286,17 +286,17 @@ header nav ul {
   padding: 0;
 }
 header nav li {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Lora", serif;
   color: #545454;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
 }
 header nav li.active-box {
-  border-bottom: 2px solid #FF3B3F;
+  border-bottom: 4px solid #FF3B3F;
 }
 header nav li:hover {
-  border-bottom: 2px solid #FF3B3F;
+  border-bottom: 4px solid #FF3B3F;
 }
 
 /*==============main content==============*/
@@ -509,6 +509,10 @@ body {
   }
 }
 
+.highlight {
+  color: #19adcc;
+}
+
 .tiny-bio {
   padding: 0 20px;
   text-align: center;
@@ -521,9 +525,6 @@ body {
 .tiny-bio .copy {
   text-align: center;
 }
-.tiny-bio .copy span {
-  color: #19adcc;
-}
 .tiny-bio h3 {
   margin: 0 auto;
   padding: 10px;
@@ -532,7 +533,8 @@ body {
   background: rgba(202, 235, 242, 0.6);
 }
 .tiny-bio p {
-  margin-top: 8px;
+  margin-top: 1.4em;
+  margin-bottom: 0;
   padding: 10px;
   display: inline-block;
   color: #545454;
@@ -549,6 +551,84 @@ body {
   section[role] h2 {
     font-size: 1.5em;
   }
+}
+
+.role {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+}
+
+.boxes {
+  -webkit-box-flex: 1 50%;
+  -moz-box-flex: 1 50%;
+  -webkit-flex: 1 50%;
+  -ms-flex: 1 50%;
+  flex: 1 50%;
+  height: 50px;
+  padding: 5px;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 1px;
+  position: relative;
+}
+@media screen and (min-width: 900px) {
+  .boxes {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+.boxes p {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-bottom: 0;
+  line-height: 1.2;
+  font-family: 'Century', serif;
+  font-style: italic;
+  color: white;
+}
+
+.lavender {
+  background-color: #ACA1BF;
+}
+
+.clouds {
+  background-color: #8BCEDE;
+}
+
+.creamsicle {
+  background-color: #FEB275;
+}
+
+.split-pea {
+  background-color: #B1B566;
+}
+
+.tuscany {
+  background-color: #CE6656;
+}
+
+.lipstick {
+  background-color: #9F2052;
+}
+
+.underline {
+  border-bottom: 4px solid #acdce6;
+}
+
+.margin-bottom {
+  margin-bottom: 1.4em !important;
 }
 
 img {

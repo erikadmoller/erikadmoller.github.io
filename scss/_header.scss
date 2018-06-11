@@ -29,7 +29,7 @@ header {
 
 	.header-wrapper .logo {
 		margin-top: 17px;
-		background-image: url('../assets/logo.png');
+		background-image: url('../assets/logo.svg');
 		background-size: contain;
 	    width: 310px;
 	    height: 49px;
@@ -79,10 +79,10 @@ header {
 		    float: right;
 		    cursor: pointer;
 		    display: inline-block;
-			border-bottom: 2px solid $links;
+			border-bottom: 4px solid $links;
 
 			&:hover {
-				border-bottom: 2px solid $links;
+				border-bottom: 4px solid $links;
 			}
 
 			@media screen and (max-width: 960px) {
@@ -107,18 +107,18 @@ header {
 		}
 
 		li {
-			font-family: $copy;
+			font-family: $head;
 			color: $carbon;
 			font-style: normal;
 			font-weight: 400;
 			font-size: 17px;
 
 			&.active-box {
-				border-bottom: 2px solid $links;
+				border-bottom: 4px solid $links;
 			}
 
 			&:hover {
-				border-bottom: 2px solid $links;
+				border-bottom: 4px solid $links;
 			}
 		}
 	}

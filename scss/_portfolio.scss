@@ -12,6 +12,66 @@ section[role] h2 {
 	}
 }
 
+.role {
+	font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+}
+
+.boxes {
+	@include flex(1 50%);
+	height: 50px;
+	padding: 5px;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+    position: relative;
+
+    @media screen and (min-width: 900px) {
+    	@include flex(1);
+    }
+}
+
+.boxes p {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	@include transform(translateY(-50%));
+    margin-bottom: 0;
+	line-height: 1.2;
+	font-family: 'Century', serif;
+    font-style: italic;
+    color: white;
+}
+
+.lavender {
+	background-color: #ACA1BF;
+}
+.clouds {
+	background-color: #8BCEDE;
+}
+.creamsicle {
+	background-color: #FEB275;
+}
+.split-pea {
+	background-color: #B1B566;
+}
+.tuscany {
+	background-color: #CE6656;
+}
+.lipstick {
+	background-color: #9F2052;
+}
+
+.underline {
+	border-bottom: 4px solid #acdce6;
+}
+
+.margin-bottom {
+	margin-bottom: 1.4em !important;
+}
+
 img {
 	max-width: 100%;
 	image-rendering: -webkit-optimize-contrast;

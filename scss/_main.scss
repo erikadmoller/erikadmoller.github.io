@@ -199,6 +199,11 @@ body {
  	}
 
  }
+
+ .highlight {
+    color: #19adcc;
+ }
+ 
  .tiny-bio {
  	padding: 0 20px;
  	text-align: center;
@@ -210,9 +215,6 @@ body {
  	.copy {
  		text-align: center;
 
-        span {
-            color: #19adcc;
-        }
  	}
 
  	h3 { 
@@ -223,7 +225,8 @@ body {
  		background: rgba(202, 235, 242, .6);
  	}
  	p { 
- 		margin-top: 8px; 
+ 		margin-top: 1.4em;
+        margin-bottom: 0;
  		padding: 10px;
  		display: inline-block;
  		color: $carbon; 
