@@ -43,7 +43,7 @@
 						<section role="the challenge" class="o-box-6 o-sm-box-12 project-hero__intro">
 							<h1 class="page-title">Nav redesign</h1>
 							<a class="page-title__link" href="http://www.earthboundtrading.com"><p>www.earthboundtrading.com</p></a>
-							<p>The navigation menu was in need of better functionality and accessibility.
+							<p>The navigation menu was in need of modern functionality and accessibility.
 							</p>
 						</section>
 						<section role="hero image" class="o-box-6 o-sm-box-12 project-hero__image">
@@ -64,15 +64,15 @@
 					</section>
 				</div>
 				<div class="o-grid o-section">
-					<section role="the challenge" class="o-box-9">
+					<section role="the challenge" class="o-box-9 o-sm-box-12">
 						<h2>The challenge</h2>
-						<p><strong>The user problem: </strong>When the site first launched three years ago, the menu navigation was deep.
+						<p><strong>The user problem: </strong>When the site first launched three years ago, the menu navigation flow was deep.
 							We found pageviews were extremely low on third and fourth tier page categories. 
 							The navigation lacked responsiveness especially on mobile where so many visible categories made the nav too long.</p>
 						<p><strong>The solution:</strong> A meganav.</p>
 					</section>
 				</div>
-				<div class="o-grid o-section">
+				<div class="o-grid o-section o-section-wrapper--border-bottom">
 					<section role="hero" class="o-box-8 o-sm-box-12">
 						<p class="image-caption">Old Desktop</p>
 						<img src="../assets/nav-desktop-old.jpg"/>
@@ -81,10 +81,9 @@
 						<p class="image-caption">Old Mobile</p>
 						<img src="../assets/nav-mobile-old.jpg"/>
 					</section>
-					<div class="o-box-9 o-section-wrapper--border-bottom"></div>
 				</div>
 				<div class="o-grid o-section">
-					<section role="research and discovery" class="o-box-9">
+					<section role="research and discovery" class="o-box-9 o-sm-box-12">
 						<h2>Research and discovery</h2>
 						<p><strong>UX lab discovery: </strong></p>
 						<p class="role"><span class="highlight">Role:</span> Follow-up interviewer and recording analyst.<br>
@@ -103,7 +102,7 @@
 					</section>
 				</div>
 				<div class="o-grid o-section">
-					<section role="sketching wireframes" class="o-box-9">
+					<section role="sketching wireframes" class="o-box-9 o-sm-box-12">
 						<h2>Sketching wireframes</h2>
 						<p>After presenting initial sketches to stakeholders, there was push back on my rule to never to allow first tier navigation to change. 
 							Stakeholders required unique campaigns to get the highest visibility.</p>
@@ -113,7 +112,7 @@
 						<p class="role"><span class="highlight">Ideation #1: </span>Meganav with stacked related columns.<br>
 							<span class="highlight">Ideation #2: </span>Include nav images.</p>
 						<h2>Solutions to unchangeable processes.</h2>
-						<p>Earthbound's business model is heavy on the use of promotionals and I knew despite what research says about not overdoing
+						<p>Earthbound's business model is sale driven and I knew despite what research says about not overusing
 							promos, this was not a battle I would ever win.
 						</p>
 						<p>I pitched the use of nav images to lighten areas on the site that are promo heavy. The homepage in particular is the main
@@ -149,37 +148,61 @@
 					</section>
 				</div>
 				<div class="o-grid o-section">
-					<section role="sketching wireframes" class="o-box-9">
+					<section role="sketching wireframes" class="o-box-9 o-sm-box-12">
 						<p><strong>Mobile Strategy: </strong>Collapsing three tiers of menus was a challenge, but it was also standard practice amongst competitors.</p>
 						<p>I used neutral background color variation to differentiate between second and third tier menus. Second or third tier categories with no children naturally did not have an expandable icon.</p>
 						<p>To keep the header uncluttered I needed to move an icon somewhere else. After going through our analytics, I found that 'My Account' was the least likely path users took to enter their account. 
 							Most of the time users entered their account through a form in the checkout process. The best possible place to move 'My Account' was within the nav menu.</p>
 					</section>
 				</div>
+				<div class="o-grid o-section">
+					<section role="animation" class="o-box-9 o-sm-box-12">
+						<h2>Animation</h2>
+						<p><strong>Desktop hovers and timers</strong></p>
+						<p>After consulting the design team about branding standards and testing 
+						a few interactions with coded prototypes I decided to incorporate our brand standard blue as an underline because 
+						it is a site-wide pattern.</p>
+						<p>In testing users were confused when the menu opened as they scrolled over it to a different destination.
+						I delayed the drop-down menu by .2s to prevent it from opening when the user does not intend to. I added a .3s time event on the slideout to make the whole animation
+						feel casual and natural.<p>
+						<p><strong>Mobile touch</strong></p>
+						<p>My research showed that slide out menus are prevalent on mobile navigations and 
+						this strategy was right for this project too.</p> 
+						<p><strong>Admin challenge</strong></p>
+						<p>It was a challenge to design around a fluctuating number of categories and levels. Accordions are prevalent on mobile navigation and this was 
+						the best design and technical solution because it is a pattern on the site.
+						</p>
+					</section>
+				</div>
+				<div class="o-grid o-section margin-bottom">
+					<section role="hero" class="o-box-6 o-sm-box-12">
+						<iframe src="https://giphy.com/embed/1eEJU2iqzS4nevzYm9" width="100%" height="267" frameBorder="0" style="pointer-events: none;" allowFullScreen></iframe>
+					</section>
+					<section role="hero" class="o-box-4 o-sm-box-12">
+						<iframe src="https://giphy.com/embed/fe9TujPzXfNXIeQxE1" width="100%" height="480" frameBorder="0" style="pointer-events: none;" allowFullScreen></iframe>
+					</section>
+				</div>
+				<div class="o-grid o-section margin-bottom">
+					<section role="animation" class="o-box-6 o-sm-box-12">
+						<p><strong>What about search? </strong>From a development standpoint, I knew the search menu would conflict with the nav menu on both desktop and mobile.
+						<p>After digging in our analytics, it was apparent most users search initially or when they give up hunting in the menus. 
+						The search became the highest layer when the nav and search are active.</p>
+					</section>
+					<section role="hero" class="o-box-4 o-sm-box-12 gif-wrapper">
+						<iframe src="https://giphy.com/embed/2sYKVSWwoOx7fBQJB5" width="100%" height="480" frameBorder="0" style="pointer-events: none;" allowFullScreen></iframe>
+					</section>
+				</div>
+				<div class="o-grid o-section">
+						<section role="faqs" class="o-box-9 o-sm-box-12">
+							<h2>Learnings</h2>
+							<p>Even with best intentions and planning for flexible fail safe solutions, you can't forsee every
+								outcome when its out of your control. The navigation continuously changes in the CMS admin,
+								which means content standards are not always followed. As a developer who troubleshoots
+								all front end bugs I learn and track news ways admin users find to break the navigation.
+							</p>
+						</section>
+					</div>
 			</section>
-			<div class="o-grid o-section">
-				<section role="animation" class="o-box-9">
-					<h2>Animation</h2>
-					<p><strong>Desktop <i>hovers</i>: </strong>After consulting the design team about branding standards and testing a few interactions we decided to incorporate our brand standard blue as an underline.</p>
-					<p>We tested several implementations from modifying active category text color to background colors, but it was inconsistent with other hover interactions across our site. We use brand blue in body text hovers; therefore it was inconsistent with how a drop-down menu performs as opposed to a link to another page.</p>
-					<p>I added a .3s timer on the drop-down menu partly because most of our competitors have similar functionality, but also because it renders our site a little more sophisticated. I delayed the drop-down menu by .2s because in testing the nav would instantly open when users slowly moved their cursors over the nav with the intent of moving down the page.<p>
-					<p><strong>Mobile <i>touch</i>: </strong>From researching our competition we knew slide out menus are prevalent on mobile and this strategy was right for us. The trouble we had is that our main navigation can change and it was a challenge to design with a fluctuating number of categories. When the menu initially opens by sliding in from the left, we use the slide down animations that you typically see with accordions. We adapted this animation from other places on our site with similar functionality.</p>
-				</section>
-				<section role="hero" class="o-box-6 o-sm-box-12">
-					<iframe src="https://giphy.com/embed/1eEJU2iqzS4nevzYm9" width="100%" height="267" frameBorder="0" style="pointer-events: none;" allowFullScreen></iframe>
-				</section>
-				<section role="hero" class="o-box-4 o-sm-box-12">
-					<iframe src="https://giphy.com/embed/fe9TujPzXfNXIeQxE1" width="100%" height="480" frameBorder="0" style="pointer-events: none;" allowFullScreen></iframe>
-				</section>
-				<section role="animation" class="o-box-9">
-					<p><strong>What about search? </strong>From my standpoint, I knew the search menu would conflict with the nav menu. We had to decide which would overlay the other in the event a user opened both of them. What was more important? 
-					<p>After digging in our analytics, it was apparent most users preferred search or ended up searching when they could not find what they wanted in the nav.</p>
-					<p>Therefore, I decided to make the search the highest layer slides out from the right when active.</p>
-				</section>
-				<section role="hero" class="o-box-12 gif-wrapper">
-					<iframe src="https://giphy.com/embed/2sYKVSWwoOx7fBQJB5" width="100%" height="480" frameBorder="0" style="pointer-events: none;" allowFullScreen></iframe>
-				</section>
-			</div>
 		</main>
 		<footer class="footer-wrapper">
 			<div class="footer">

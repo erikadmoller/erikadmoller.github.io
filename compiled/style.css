@@ -1186,16 +1186,16 @@ img {
 }
 
 /* with padding */
-.o-section-wrapper, .o-section-wrapper--border-bottom {
+.o-section-wrapper {
   padding: 0 1.2rem;
 }
 @media screen and (min-width: 640px) {
-  .o-section-wrapper, .o-section-wrapper--border-bottom {
+  .o-section-wrapper {
     padding: 0 3.1rem;
   }
 }
 @media screen and (min-width: 1040px) {
-  .o-section-wrapper, .o-section-wrapper--border-bottom {
+  .o-section-wrapper {
     padding: 0 6.7rem;
   }
 }
