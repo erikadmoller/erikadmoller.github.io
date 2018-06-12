@@ -9,6 +9,7 @@
 .o-col-4 { width: percentage(4/12); }
 .o-col-5 { width: percentage(5/12); }
 .o-col-6 { width: percentage(6/12); }
+.o-col-7 { width: percentage(7/12); }
 .o-col-8 { width: percentage(8/12); }
 .o-col-10 { width: percentage(10/12); }
 .o-col-12 { width: percentage(12/12); }
@@ -35,6 +36,9 @@
 }
 .o-box-6 { 
     @include column(percentage(6/12)); 
+}
+.o-box-7 { 
+    @include column(percentage(7/12)); 
 }
 .o-box-8 { 
     @include column(percentage(8/12)); 
