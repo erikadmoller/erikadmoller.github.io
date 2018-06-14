@@ -48,6 +48,36 @@ section[role="nav-sketch"] {
 	}
 }
 
+.scroll-feature--mobile-706 {
+	max-height: 500px;
+    @extend .scroll-feature;
+
+	@media screen and (min-width: 640px) {
+		max-height: 706px;
+	}
+}
+
+.list-label {
+	font-family: $primary;
+	font-weight: 400;
+	color: #545454;
+}
+
+.problems-list {
+	padding-left: 0;
+}
+
+.float-button {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.scroll-feature-container {
+	position: relative;
+}
+
 .scroll-feature--mobile-687 {
 	max-height: 500px;
     @extend .scroll-feature;

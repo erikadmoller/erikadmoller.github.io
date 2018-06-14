@@ -39,9 +39,9 @@
 				<section class="grid-container">
 					<div class="o-grid project-hero">
 						<section role="the challenge" class="o-box-6 o-sm-box-12 project-hero__intro">
-							<h1 class="page-title">Cart Redesign</h1>
+							<h1 class="page-title">Cart & Popup Cart Redesign</h1>
 							<a class="page-title__link" href="http://https://www.earthboundtrading.com/women/large-coral-sunglasses"><p>earthboundtrading.com</p></a>
-							<p>The increase in mobile traffic and abandoned carts led the eCommerce team to rethink the cart from a UX perspective.
+							<p>The increase in mobile traffic and abandoned carts led the eCommerce team to rethink the cart flow from a UX perspective.
 							</p>
 						</section>
 						<section role="hero image" class="o-box-6 o-sm-box-12 project-hero__image">
@@ -53,38 +53,70 @@
 			<section class="grid-container slide-up-fade-in">
 				<div class="o-grid o-section">
 					<section role="hero" class="o-box-8 o-sm-box-12">
-						<p class="image-caption">Desktop</p>
+							<p class="image-caption">Popup Cart Desktop</p>
+							<img src="../assets/popup-site.jpg"/>
+						</section>
+						<section role="hero" class="o-box-4 o-sm-box-12">
+							<p class="image-caption">Popup Cart Mobile</p>
+							<div class="scroll-feature-container">
+								<div class="scroll-feature--mobile-706">
+									<img src="../assets/popup-site-mobile.jpg"/>
+								</div>
+								<img class="float-button" src="../assets/popup-site-mobile-button.png"/>
+							</div>
+						</section>
+					<section role="hero" class="o-box-8 o-sm-box-12">
+						<p class="image-caption">Cart Page Desktop</p>
 						<img src="../assets/cart-desktop.jpg"/>
 					</section>
 					<section role="hero" class="o-box-4 o-sm-box-12">
-						<p class="image-caption">Mobile - scroll to see entire page </p>
-						<div class="scroll-feature--mobile-724">
-							<img src="../assets/cart-mobile.jpg"/>
+						<p class="image-caption">Cart Page Mobile - scroll to see entire page </p>
+						<div class="scroll-feature-container">
+							<div class="scroll-feature--mobile-706">
+								<img src="../assets/cart-mobile.jpg"/>
+							</div>
+							<img class="float-button" src="../assets/cart-mobile-button.png"/>
 						</div>
 					</section>
 				</div>
 				<div class="o-grid o-section">
 					<section role="the challenge" class="o-box-9 o-sm-box-12 o-section-wrapper--border-bottom">
 						<h2>The challenge</h2>
-						<p><strong>The user problem: </strong>Understanding shipping options and troubleshooting promotional codes was confusing to users.</p>
+						<p><strong>The user problem: </strong>Adding product to the cart was a 2-3 step process, and it removed the user's
+						from their shopping flow.
+						Understanding shipping options and troubleshooting promotional codes were confusing to users.</p>
 						<p>Customer service reported issues, and this was validated by observing screen recordings.</p>
-						<p><strong>The solution: </strong>Usability redesign without a software overhaul.</p>
+						<p><strong>The solution: </strong>Popup cart feature and page redesign without a software overhaul.</p>
 					</section>
 				</div>
 				<div class="o-grid o-section">
 					<section role="research and discovery" class="o-box-9 o-sm-box-12">
 						<h2>Research and discovery</h2>
 						<p class="role"><span class="highlight">Role: </span>Stakeholder interviewer, market researcher, synthesizer.<br>
-							<span class="highlight">Methods: </span>Screen recordings, in-person interviews.</p>
-						<p>When researching how competitors and modern eCommerce websites approach their cart page, 
-						I found they were clean and as short as possible.</p>
-						<p>After observing screen recordings and interviewing customer service, developers, and the eCommerce director, 
-						I discovered a few required fields were unnecessary to display what was essentially table shipping rates. 
+							<span class="highlight">Methods: </span>Retrospective Probing, screen recordings, google analytics.</p>
+						<p><strong>Add to cart test insights: </strong>Initially, our UX test was geared toward how users navigate our drop-down menu and add products to the cart. 
+						In the feedback session, users complained about the way quantity editing functioned.</p>
+						<p>Users also complained about how "annoying" it was to be taken out of their browsing flow whenever they added 
+						a product to their cart.</p>
+						<p>Making changes to their cart, applying promo codes, and estimating shipping was not part of the test.</p>
+						</p>
+						<p>When researching how competitors and modern eCommerce websites approach their add-product-to-cart flow, 
+						I found they were clean, unassertive, and as short as possible.</p>
+						<p><strong>Estimate shipping market research: </strong>After observing screen recordings and interviewing customer service, developers, and the eCommerce director, 
+						I discovered a few required fields on the cart page were unnecessary to display what was essentially table shipping rates. 
 						I concluded that users were confused when they applied promo codes because success and error messages
 						were far from the input field.</p>
 					</section>
 				</div>
 				<div class="o-grid o-section bottom-margin">
+					<section role="hero" class="o-box-8 o-sm-box-12">
+						<p class="image-caption">Popup cart currently on desktop</p>
+						<img src="../assets/popup-site-old.jpg"/>
+					</section>
+					<section role="hero" class="o-box-4 o-sm-box-12">
+						<p class="image-caption">Popup cart currently on mobile</p>
+						<img src="../assets/popup-mobile-old.jpg"/>
+					</section>
 					<section role="hero" class="o-box-8 o-sm-box-12">
 						<p class="image-caption">Old desktop cart</p>
 						<img src="../assets/cart-desktop-old.jpg"/>
@@ -94,17 +126,40 @@
 						<div class="scroll-feature--mobile-687">
 							<img src="../assets/cart-mobile-old.jpg"/>
 						</div>
-						
 					</section>
 				</div>
 				<div class="o-grid o-section">
 					<section role="sketching wireframes" class="o-box-9 o-sm-box-12">
 						<h2>Sketching wireframes</h2>
-						<p class="role"><span class="highlight">Role: </span>Collaborated on wireframing cart page.<br>
+						<p class="role"><span class="highlight">Role: </span>Collaborated on wireframing cart and popup page.<br>
 							<span class="highlight">Tools: </span>Sketch, InVision.</p>
+						<p><strong>Popup cart as a summary: </strong>We moved the popup cart out of the way and designed it to be summary-like, 
+						it didn't make sense to customize the order at this point in the user flow. 
+						I suggested we embed them below the sizing configuration to keep actions together. 
+						</p>
+						<p><strong>1 step forward, 3 steps back: </strong>The team thought we solved a major annoyance to users, but
+						the truth was the right solution caused a bunch of user issues we couldn't ignore.</p>
+						<span class="list-label">Unexpected issues:</span>
+						<ul class="problems-list">
+							<li>Hiding categories</li>
+							<li>Taking up too much horizontal space (especially on tablet screens)</li>
+							<li>Too many buttons</li>
+							<li>Sequence of user actions</li>
+							<li>Long titles get scrunched</li>
+						</ul>
+					</section>
+					<section role="sketching wireframes" class="o-box-6 o-sm-box-12 margin-bottom">
+						<p class="image-caption">Desktop original design</p>
+						<img src="../assets/popup-bad-design.jpg"/>
+					</section>
+					<section role="sketching wireframes" class="o-box-6 o-sm-box-12 margin-bottom">
+						<p class="image-caption">Desktop popup cart revised</p>
+						<img src="../assets/popup-good-design.jpg"/>
+					</section>
+					<section role="sketching wireframes" class="o-box-9 o-sm-box-12">
 						<p><strong>Limitations to keep in mind: </strong>Old school code.</p>
-						<p>The cart was built on a default template
-						that was inflexible. Tables are not a modern approach, and they can be painfully rigid
+						<p>The cart was built on a default template that was inflexible. 
+						Tables are not a modern approach, and they can be painfully rigid
 						and unforgiving on mobile.</p>
 					</section>
 				</div>
@@ -130,8 +185,8 @@
 				</div>
 				<div class="o-grid o-section margin-bottom">
 					<section role="hero" class="o-box-7 o-sm-box-12">
-						<p><strong>Sticky mobile buttons: </strong>The graphic designer and I collaborated to shorten the cart page on mobile. We came up with bottom sticky checkout/update 
-					buttons.</p>
+						<p><strong>Sticky mobile buttons: </strong>We came up with bottom sticky view bag button on the popup cart, 
+						and checkout and update buttons on the cart page.</p>
 					</section>
 					<section role="hero" class="o-box-3 o-sm-box-12">
 						<p class="image-caption">Mobile - scroll to see entire page</p>
@@ -154,10 +209,13 @@
 					<section role="faqs" class="o-box-9 o-sm-box-12">
 						<h2>Baby steps</h2>
 						<p>I am currently in development on this project. To keep the project moving forward, 
-						we broke it down into two iterations. The first is to brand the elements. 
+						we broke it down into two iterations. The first is to brand and style the elements. 
 						The second is to implement the removal of the gift card and zip code block. 
 						Then I will implement the table shipping rates and error messages. 
-						I have already deployed the first step and am in the middle of the second.</p>
+						<p><strong>Teamwork: </strong>There are barriers prevent the second implementation from happening.
+						The collaboration of technical work is a dance between myself and our Magento agency. The user stories
+						that are dependent on their input and work are in their court currently.</p>
+						<p>I have already deployed the first step in the cart and am in the middle of the second.</p>
 					</section>
 				</div>
 				<div class="o-grid o-section">

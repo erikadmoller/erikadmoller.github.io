@@ -586,7 +586,7 @@ section[role="nav-sketch"] {
   }
 }
 
-.scroll-feature, .scroll-feature--desktop, .scroll-feature--mobile-724, .scroll-feature--mobile-687 {
+.scroll-feature, .scroll-feature--desktop, .scroll-feature--mobile-724, .scroll-feature--mobile-706, .scroll-feature--mobile-687 {
   height: 100%;
   overflow: scroll;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
@@ -603,6 +603,36 @@ section[role="nav-sketch"] {
   .scroll-feature--mobile-724 {
     max-height: 724px;
   }
+}
+
+.scroll-feature--mobile-706 {
+  max-height: 500px;
+}
+@media screen and (min-width: 640px) {
+  .scroll-feature--mobile-706 {
+    max-height: 706px;
+  }
+}
+
+.list-label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #545454;
+}
+
+.problems-list {
+  padding-left: 0;
+}
+
+.float-button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.scroll-feature-container {
+  position: relative;
 }
 
 .scroll-feature--mobile-687 {
