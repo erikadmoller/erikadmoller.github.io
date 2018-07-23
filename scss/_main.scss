@@ -213,6 +213,7 @@ body {
  
  .tiny-bio {
  	padding: 0 20px;
+    position: relative;
  	text-align: center;
 
  	@media screen and (max-width: 639px) {
@@ -225,19 +226,34 @@ body {
  	}
 
  	h3 { 
+        font-size: 1.5em;
  		margin: 0 auto; 
  		padding: 10px;
  		display: inline-block;
  		color: $carbon;
- 		background: rgba(202, 235, 242, .6);
+
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 100%;
+            max-width: 500px;
+            height: 23px;
+            margin-top: -10px;
+            background: rgba(255, 59, 63, 0.2);
+            z-index: -1;
+            left: 0;
+            right: 0;
+            margin-right: auto;
+            margin-left: auto;
+        }
  	}
  	p { 
  		margin-top: 1.4em;
         margin-bottom: 0;
  		padding: 10px;
  		display: inline-block;
- 		color: $carbon; 
- 		background: rgba(202, 235, 242, .6);
+ 		color: $carbon;
  		line-height: 29px;
  	}
  }

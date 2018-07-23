@@ -532,6 +532,7 @@ body {
 
 .tiny-bio {
   padding: 0 20px;
+  position: relative;
   text-align: center;
 }
 @media screen and (max-width: 639px) {
@@ -543,11 +544,26 @@ body {
   text-align: center;
 }
 .tiny-bio h3 {
+  font-size: 1.5em;
   margin: 0 auto;
   padding: 10px;
   display: inline-block;
   color: #545454;
-  background: rgba(202, 235, 242, 0.6);
+}
+.tiny-bio h3::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  height: 23px;
+  margin-top: -10px;
+  background: rgba(255, 59, 63, 0.2);
+  z-index: -1;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
 }
 .tiny-bio p {
   margin-top: 1.4em;
@@ -555,7 +571,6 @@ body {
   padding: 10px;
   display: inline-block;
   color: #545454;
-  background: rgba(202, 235, 242, 0.6);
   line-height: 29px;
 }
 
@@ -1070,7 +1085,7 @@ img {
 }
 
 .o-col-2 {
-  width: 16.6666666667%;
+  width: 16.66667%;
 }
 
 .o-col-3 {
@@ -1078,11 +1093,11 @@ img {
 }
 
 .o-col-4 {
-  width: 33.3333333333%;
+  width: 33.33333%;
 }
 
 .o-col-5 {
-  width: 41.6666666667%;
+  width: 41.66667%;
 }
 
 .o-col-6 {
@@ -1090,15 +1105,15 @@ img {
 }
 
 .o-col-7 {
-  width: 58.3333333333%;
+  width: 58.33333%;
 }
 
 .o-col-8 {
-  width: 66.6666666667%;
+  width: 66.66667%;
 }
 
 .o-col-10 {
-  width: 83.3333333333%;
+  width: 83.33333%;
 }
 
 .o-col-12 {
@@ -1119,7 +1134,7 @@ img {
 }
 
 .o-box-2 {
-  flex: 0 0 calc(16.6666666667% - 1.2em);
+  flex: 0 0 calc(16.66667% - 1.2em);
   margin-right: 0.6em;
   margin-left: 0.6em;
   margin-bottom: 0.6em;
@@ -1135,7 +1150,7 @@ img {
 }
 
 .o-box-4 {
-  flex: 0 0 calc(33.3333333333% - 1.2em);
+  flex: 0 0 calc(33.33333% - 1.2em);
   margin-right: 0.6em;
   margin-left: 0.6em;
   margin-bottom: 0.6em;
@@ -1143,7 +1158,7 @@ img {
 }
 
 .o-box-5 {
-  flex: 0 0 calc(41.6666666667% - 1.2em);
+  flex: 0 0 calc(41.66667% - 1.2em);
   margin-right: 0.6em;
   margin-left: 0.6em;
   margin-bottom: 0.6em;
@@ -1159,7 +1174,7 @@ img {
 }
 
 .o-box-7 {
-  flex: 0 0 calc(58.3333333333% - 1.2em);
+  flex: 0 0 calc(58.33333% - 1.2em);
   margin-right: 0.6em;
   margin-left: 0.6em;
   margin-bottom: 0.6em;
@@ -1167,7 +1182,7 @@ img {
 }
 
 .o-box-8 {
-  flex: 0 0 calc(66.6666666667% - 1.2em);
+  flex: 0 0 calc(66.66667% - 1.2em);
   margin-right: 0.6em;
   margin-left: 0.6em;
   margin-bottom: 0.6em;
@@ -1175,7 +1190,7 @@ img {
 }
 
 .o-box-9 {
-  flex: 0 0 calc(83.3333333333% - 1.2em);
+  flex: 0 0 calc(83.33333% - 1.2em);
   margin-right: 0.6em;
   margin-left: 0.6em;
   margin-bottom: 0.6em;
